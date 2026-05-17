@@ -118,7 +118,9 @@ a {
   color: #fff;
   padding: 120px clamp(18px, 6vw, 86px) 72px;
   background:
-    linear-gradient(120deg, rgba(6, 25, 47, 0.96), rgba(8, 38, 70, 0.92)),
+    linear-gradient(90deg, rgba(6, 25, 47, 0.96), rgba(6, 25, 47, 0.74) 48%, rgba(6, 25, 47, 0.36)),
+    linear-gradient(0deg, rgba(6, 25, 47, 0.94), rgba(6, 25, 47, 0.18) 58%),
+    url("assets/sailaway-hero-banner.png") center / cover no-repeat,
     var(--navy);
 }
 
@@ -137,13 +139,14 @@ a {
 }
 
 .hero-logo {
-  width: clamp(240px, 19vw, 380px);
-  height: clamp(240px, 19vw, 380px);
+  width: clamp(300px, 24vw, 520px);
+  height: clamp(300px, 24vw, 520px);
   object-fit: contain;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   padding: clamp(10px, 1.2vw, 18px);
   margin-bottom: 28px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
 }
 
 .eyebrow {
