@@ -428,6 +428,87 @@ h3 {
   margin: 0;
 }
 
+.map-section {
+  display: grid;
+  grid-template-columns: 0.84fr 1.16fr;
+  gap: 34px;
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 86px clamp(18px, 4vw, 42px);
+}
+
+.map-copy p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.map-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.map-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  color: #fff;
+  background: var(--navy);
+  font-size: 13px;
+}
+
+.map-toolbar span,
+.map-toolbar strong {
+  display: block;
+}
+
+.europe-map {
+  min-height: 470px;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(11, 140, 134, 0.12), transparent 28%),
+    linear-gradient(180deg, #eef7f8, #dbecef);
+}
+
+.europe-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.country {
+  fill: #f9fbfb;
+  stroke: #bfd1d6;
+  stroke-width: 0.6;
+}
+
+.coverage-dot {
+  fill: #d71920;
+  stroke: #fff;
+  stroke-width: 1.2;
+  opacity: 0.9;
+}
+
+.coverage-ring {
+  fill: none;
+  stroke: rgba(215, 25, 32, 0.2);
+  stroke-width: 1;
+}
+
+.map-note {
+  margin: 0;
+  padding: 12px 18px 16px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+  background: #f7fafb;
+  border-top: 1px solid var(--line);
+}
+
 .compact {
   padding-top: 76px;
 }
@@ -562,6 +643,7 @@ textarea:focus {
 
   .split-section,
   .visual-section,
+  .map-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -628,6 +710,7 @@ textarea:focus {
   .section,
   .visual-section,
   .split-section,
+  .map-section,
   .contact-section {
     padding: 58px 18px;
   }
@@ -647,5 +730,13 @@ textarea:focus {
   .company-details div {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .map-toolbar {
+    display: grid;
+  }
+
+  .europe-map {
+    min-height: 340px;
   }
 }
