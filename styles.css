@@ -118,8 +118,8 @@ a {
   color: #fff;
   padding: 120px clamp(18px, 6vw, 86px) 72px;
   background:
-    linear-gradient(90deg, rgba(6, 25, 47, 0.96), rgba(6, 25, 47, 0.74) 48%, rgba(6, 25, 47, 0.36)),
-    linear-gradient(0deg, rgba(6, 25, 47, 0.94), rgba(6, 25, 47, 0.18) 58%),
+    linear-gradient(90deg, rgba(6, 25, 47, 0.84), rgba(6, 25, 47, 0.58) 48%, rgba(6, 25, 47, 0.18)),
+    linear-gradient(0deg, rgba(6, 25, 47, 0.86), rgba(6, 25, 47, 0.06) 58%),
     url("assets/sailaway-hero-banner.png") center / cover no-repeat,
     var(--navy);
 }
