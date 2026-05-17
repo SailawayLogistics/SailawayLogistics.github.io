@@ -16,15 +16,18 @@
         <img src="assets/sailaway-logo.png" alt="Sailaway Logistics logo">
         <span>Sailaway Logistics</span>
       </a>
+      <button class="language-trigger" type="button" data-language-open aria-label="Change language">
+        <span data-current-language>EN</span>
+      </button>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
         <span></span>
         <span></span>
       </button>
       <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#services">Services</a>
-        <a href="#coverage">Coverage</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#coverage" data-i18n="nav.coverage">Coverage</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </header>
 
@@ -32,12 +35,12 @@
       <section class="hero" id="home" aria-label="Sailaway Logistics">
         <div class="hero-content">
           <img class="hero-logo" src="assets/sailaway-logo.png" alt="Sailaway Logistics">
-          <p class="eyebrow">EU sleeper-cabin van freight up to 3.5t</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">EU sleeper-cabin van freight up to 3.5t</p>
           <h1>Sailaway Logistics</h1>
-          <p class="hero-copy">Part load and full load transport across the whole European Union, with 24/7 dispatch assistance and complete document support.</p>
+          <p class="hero-copy" data-i18n="hero.copy">Part load and full load transport across the whole European Union, with 24/7 dispatch assistance and complete document support.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Request transport</a>
-            <a class="button secondary" href="#services">View services</a>
+            <a class="button primary" href="#contact" data-i18n="hero.primary">Request transport</a>
+            <a class="button secondary" href="#services" data-i18n="hero.secondary">View services</a>
           </div>
         </div>
       </section>
@@ -46,62 +49,62 @@
         <div class="intro-grid">
           <div>
             <span class="metric">EU</span>
-            <span class="metric-label">whole European Union coverage</span>
+            <span class="metric-label" data-i18n="metrics.eu">whole European Union coverage</span>
           </div>
           <div>
             <span class="metric">3.5t</span>
-            <span class="metric-label">sleeper-cabin van focus</span>
+            <span class="metric-label" data-i18n="metrics.vans">sleeper-cabin van focus</span>
           </div>
           <div>
             <span class="metric">24/7</span>
-            <span class="metric-label">dispatch assistance</span>
+            <span class="metric-label" data-i18n="metrics.dispatch">dispatch assistance</span>
           </div>
           <div>
             <span class="metric">Part / Full</span>
-            <span class="metric-label">load options for clients</span>
+            <span class="metric-label" data-i18n="metrics.loads">load options for clients</span>
           </div>
         </div>
       </section>
 
       <section class="section" id="services">
         <div class="section-heading">
-          <p class="eyebrow">What we do</p>
-          <h2>EU transport with 3.5t sleeper-cabin vans</h2>
-          <p>Sailaway Logistics focuses on part loads and full loads across the EU, using vans up to 3.5t with sleeper capsules for long-distance routes and flexible delivery planning.</p>
+          <p class="eyebrow" data-i18n="services.eyebrow">What we do</p>
+          <h2 data-i18n="services.title">EU transport with 3.5t sleeper-cabin vans</h2>
+          <p data-i18n="services.copy">Sailaway Logistics focuses on part loads and full loads across the EU, using vans up to 3.5t with sleeper capsules for long-distance routes and flexible delivery planning.</p>
         </div>
         <div class="services-grid">
           <article class="service-card">
-            <h3>Part Load Transport</h3>
-            <p>Efficient transport for smaller shipments, urgent pallets, partial van capacity and flexible routes across the EU.</p>
+            <h3 data-i18n="services.partTitle">Part Load Transport</h3>
+            <p data-i18n="services.partCopy">Efficient transport for smaller shipments, urgent pallets, partial van capacity and flexible routes across the EU.</p>
           </article>
           <article class="service-card">
-            <h3>Full Load Transport</h3>
-            <p>Dedicated van capacity for direct shipments where the client needs one vehicle, one route and clear delivery timing.</p>
+            <h3 data-i18n="services.fullTitle">Full Load Transport</h3>
+            <p data-i18n="services.fullCopy">Dedicated van capacity for direct shipments where the client needs one vehicle, one route and clear delivery timing.</p>
           </article>
           <article class="service-card">
-            <h3>Dispatch Services</h3>
-            <p>24/7 dispatch assistance, driver communication, route follow-up, shipment status updates and practical problem solving on the road.</p>
+            <h3 data-i18n="services.dispatchTitle">Dispatch Services</h3>
+            <p data-i18n="services.dispatchCopy">24/7 dispatch assistance, driver communication, route follow-up, shipment status updates and practical problem solving on the road.</p>
           </article>
           <article class="service-card">
-            <h3>Import / Export Documents</h3>
-            <p>Support with necessary transport documentation for import and export, including CMR, POD, transport orders and delivery confirmations.</p>
+            <h3 data-i18n="services.docsTitle">Import / Export Documents</h3>
+            <p data-i18n="services.docsCopy">Support with necessary transport documentation for import and export, including CMR, POD, transport orders and delivery confirmations.</p>
           </article>
         </div>
       </section>
 
       <section class="visual-section" aria-label="EU van freight">
         <div class="visual-copy">
-          <p class="eyebrow">For clients</p>
-          <h2>One contact for EU part loads and full loads</h2>
-          <p>When your shipment needs a fast answer, Sailaway Logistics gives you a direct process: confirmed van capacity, clear route details, driver communication, 24/7 dispatch support and document follow-up after delivery.</p>
+          <p class="eyebrow" data-i18n="clients.eyebrow">For clients</p>
+          <h2 data-i18n="clients.title">One contact for EU part loads and full loads</h2>
+          <p data-i18n="clients.copy">When your shipment needs a fast answer, Sailaway Logistics gives you a direct process: confirmed van capacity, clear route details, driver communication, 24/7 dispatch support and document follow-up after delivery.</p>
           <div class="client-points">
             <div>
-              <strong>Best for</strong>
-              <span>Part loads, full loads, urgent pallets, smaller cargo and dedicated sleeper-van routes across the EU.</span>
+              <strong data-i18n="clients.bestTitle">Best for</strong>
+              <span data-i18n="clients.bestCopy">Part loads, full loads, urgent pallets, smaller cargo and dedicated sleeper-van routes across the EU.</span>
             </div>
             <div>
-              <strong>Client benefit</strong>
-              <span>Fast response, simple communication, clear shipment status, dispatch assistance and reliable import/export documentation support.</span>
+              <strong data-i18n="clients.benefitTitle">Client benefit</strong>
+              <span data-i18n="clients.benefitCopy">Fast response, simple communication, clear shipment status, dispatch assistance and reliable import/export documentation support.</span>
             </div>
           </div>
         </div>
@@ -112,79 +115,79 @@
 
       <section class="split-section" id="coverage">
         <div class="split-copy">
-          <p class="eyebrow">Coverage</p>
-          <h2>Built for companies that need reliable EU van capacity</h2>
-          <p>Sailaway Logistics works in partnership with Wolf Express DOO, established in 2022, combining modern logistics communication with practical road transport experience.</p>
+          <p class="eyebrow" data-i18n="coverage.eyebrow">Coverage</p>
+          <h2 data-i18n="coverage.title">Built for companies that need reliable EU van capacity</h2>
+          <p data-i18n="coverage.copy">Sailaway Logistics works in partnership with Wolf Express DOO, established in 2022, combining modern logistics communication with practical road transport experience.</p>
           <ul class="check-list">
-            <li>3.5t sleeper-cabin vans for EU freight</li>
-            <li>Part load and full load transport options</li>
-            <li>24/7 dispatch assistance for clients and drivers</li>
-            <li>Import, export and delivery document follow-up</li>
+            <li data-i18n="coverage.item1">3.5t sleeper-cabin vans for EU freight</li>
+            <li data-i18n="coverage.item2">Part load and full load transport options</li>
+            <li data-i18n="coverage.item3">24/7 dispatch assistance for clients and drivers</li>
+            <li data-i18n="coverage.item4">Import, export and delivery document follow-up</li>
           </ul>
         </div>
         <div class="logo-panel">
           <img src="assets/sailaway-logo.png" alt="Sailaway Logistics logo">
-          <p>In partnership with Wolf Express DOO, established in 2022.</p>
+          <p data-i18n="coverage.partner">In partnership with Wolf Express DOO, established in 2022.</p>
         </div>
       </section>
 
       <section class="map-section" aria-label="Europe coverage map">
         <div class="map-copy">
-          <p class="eyebrow">European coverage</p>
-          <h2>From capitals to small industrial towns</h2>
-          <p>Our work is built around road transport across the whole European Union. The marked points show representative cities, regions and freight corridors where van transport is commonly needed. Coverage is not limited to the dots: we support pickups and deliveries in major cities, smaller towns, villages and industrial zones when accessible by road.</p>
+          <p class="eyebrow" data-i18n="map.eyebrow">European coverage</p>
+          <h2 data-i18n="map.title">From capitals to small industrial towns</h2>
+          <p data-i18n="map.copy">Our work is built around road transport across the whole European Union. The marked points show representative cities, regions and freight corridors where van transport is commonly needed. Coverage is not limited to the dots: we support pickups and deliveries in major cities, smaller towns, villages and industrial zones when accessible by road.</p>
         </div>
         <div class="map-card">
           <div class="map-toolbar">
-            <span>Representative EU freight coverage</span>
-            <strong>Part loads · Full loads · 24/7 dispatch</strong>
+            <span data-i18n="map.toolbar">Representative EU freight coverage</span>
+            <strong data-i18n="map.toolbarStrong">Part loads · Full loads · 24/7 dispatch</strong>
           </div>
           <div class="europe-map" id="europe-map" role="img" aria-label="Map of Europe with red coverage points"></div>
-          <p class="map-note">Dots are representative service areas and common freight corridors, not a false claim of every exact completed delivery location.</p>
+          <p class="map-note" data-i18n="map.note">Dots are representative service areas and common freight corridors, not a false claim of every exact completed delivery location.</p>
         </div>
       </section>
 
       <section class="section compact" id="process">
         <div class="section-heading">
-          <p class="eyebrow">How it works</p>
-          <h2>A simple transport workflow</h2>
+          <p class="eyebrow" data-i18n="process.eyebrow">How it works</p>
+          <h2 data-i18n="process.title">A simple transport workflow</h2>
         </div>
         <div class="process-grid">
           <div class="process-step">
             <span>01</span>
-            <h3>Send shipment details</h3>
-            <p>Share loading place, unloading place, cargo details, loading date, weight and whether it is part load or full load.</p>
+            <h3 data-i18n="process.step1Title">Send shipment details</h3>
+            <p data-i18n="process.step1Copy">Share loading place, unloading place, cargo details, loading date, weight and whether it is part load or full load.</p>
           </div>
           <div class="process-step">
             <span>02</span>
-            <h3>Confirm van availability</h3>
-            <p>We align timing, price, sleeper-van capacity, driver details and loading instructions before dispatch.</p>
+            <h3 data-i18n="process.step2Title">Confirm van availability</h3>
+            <p data-i18n="process.step2Copy">We align timing, price, sleeper-van capacity, driver details and loading instructions before dispatch.</p>
           </div>
           <div class="process-step">
             <span>03</span>
-            <h3>24/7 dispatch support</h3>
-            <p>Communication stays clear through pickup, transit and unloading so the client knows what is happening.</p>
+            <h3 data-i18n="process.step3Title">24/7 dispatch support</h3>
+            <p data-i18n="process.step3Copy">Communication stays clear through pickup, transit and unloading so the client knows what is happening.</p>
           </div>
           <div class="process-step">
             <span>04</span>
-            <h3>Close documents</h3>
-            <p>CMR, POD and necessary import/export transport documents are followed so the shipment can be closed cleanly.</p>
+            <h3 data-i18n="process.step4Title">Close documents</h3>
+            <p data-i18n="process.step4Copy">CMR, POD and necessary import/export transport documents are followed so the shipment can be closed cleanly.</p>
           </div>
         </div>
       </section>
 
       <section class="contact-section" id="contact">
         <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2>Request EU sleeper-van freight capacity</h2>
-          <p>Send the route and shipment details. We will respond with availability, timing and pricing for part load or full load transport up to 3.5t.</p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Request EU sleeper-van freight capacity</h2>
+          <p data-i18n="contact.copy">Send the route and shipment details. We will respond with availability, timing and pricing for part load or full load transport up to 3.5t.</p>
           <dl class="company-details">
             <div>
-              <dt>CEO</dt>
+              <dt data-i18n="contact.ceo">CEO</dt>
               <dd>Marko Vukobratovic</dd>
             </div>
             <div>
-              <dt>Address</dt>
+              <dt data-i18n="contact.address">Address</dt>
               <dd>Serbia 22320, Indjija, Kralja Petra 1, 36</dd>
             </div>
             <div>
@@ -202,13 +205,13 @@
           </dl>
           <div class="contact-lines">
             <a href="mailto:dispo@wolfexpress.rs">dispo@wolfexpress.rs</a>
-            <a href="tel:+34624246275">Spain: +34 624 246 275</a>
-            <a href="tel:+381606388005">Serbia: +381 60 638 8005</a>
+            <a href="tel:+34624246275"><span data-i18n="contact.spain">Spain</span>: +34 624 246 275</a>
+            <a href="tel:+381606388005"><span data-i18n="contact.serbia">Serbia</span>: +381 60 638 8005</a>
           </div>
         </div>
         <form class="contact-form" action="mailto:dispo@wolfexpress.rs" method="post" enctype="text/plain">
           <label>
-            Company name
+            <span data-i18n="form.company">Company name</span>
             <input type="text" name="Company" autocomplete="organization" required>
           </label>
           <label>
@@ -216,22 +219,36 @@
             <input type="email" name="Email" autocomplete="email" required>
           </label>
           <label>
-            Loading and unloading route
-            <input type="text" name="Route" placeholder="Example: Milan, IT to Munich, DE" required>
+            <span data-i18n="form.route">Loading and unloading route</span>
+            <input type="text" name="Route" placeholder="Example: Madrid, ES to Munich, DE" data-i18n-placeholder="form.routePlaceholder" required>
           </label>
           <label>
-            Shipment details
-            <textarea name="Shipment details" rows="5" placeholder="Cargo, weight, loading date, part load or full load, import/export documents"></textarea>
+            <span data-i18n="form.details">Shipment details</span>
+            <textarea name="Shipment details" rows="5" placeholder="Cargo, weight, loading date, part load or full load, import/export documents" data-i18n-placeholder="form.detailsPlaceholder"></textarea>
           </label>
-          <button class="button primary full" type="submit">Send request</button>
+          <button class="button primary full" type="submit" data-i18n="form.submit">Send request</button>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
       <img src="assets/sailaway-logo.png" alt="Sailaway Logistics logo">
-      <p>© <span data-year></span> Sailaway Logistics. Partnership with Wolf Express DOO, established in 2022. CEO: Marko Vukobratovic · dispo@wolfexpress.rs</p>
+      <p><span data-i18n="footer.prefix">©</span> <span data-year></span> Sailaway Logistics. <span data-i18n="footer.copy">Partnership with Wolf Express DOO, established in 2022. CEO: Marko Vukobratovic</span> · dispo@wolfexpress.rs</p>
     </footer>
+
+    <div class="language-modal" data-language-modal aria-hidden="true">
+      <div class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-title">
+        <img src="assets/sailaway-logo.png" alt="Sailaway Logistics logo">
+        <p class="eyebrow" data-i18n="language.eyebrow">Choose language</p>
+        <h2 id="language-title" data-i18n="language.title">Select your preferred language</h2>
+        <div class="language-options">
+          <button type="button" data-language-choice="en">English</button>
+          <button type="button" data-language-choice="es">Español</button>
+          <button type="button" data-language-choice="fr">Français</button>
+          <button type="button" data-language-choice="sr">Srpski</button>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>

@@ -29,6 +29,355 @@ if (navToggle && nav) {
   });
 }
 
+const translations = {
+  en: {
+    "nav.services": "Services",
+    "nav.coverage": "Coverage",
+    "nav.process": "Process",
+    "nav.contact": "Contact",
+    "hero.eyebrow": "EU sleeper-cabin van freight up to 3.5t",
+    "hero.copy": "Part load and full load transport across the whole European Union, with 24/7 dispatch assistance and complete document support.",
+    "hero.primary": "Request transport",
+    "hero.secondary": "View services",
+    "metrics.eu": "whole European Union coverage",
+    "metrics.vans": "sleeper-cabin van focus",
+    "metrics.dispatch": "dispatch assistance",
+    "metrics.loads": "load options for clients",
+    "services.eyebrow": "What we do",
+    "services.title": "EU transport with 3.5t sleeper-cabin vans",
+    "services.copy": "Sailaway Logistics focuses on part loads and full loads across the EU, using vans up to 3.5t with sleeper capsules for long-distance routes and flexible delivery planning.",
+    "services.partTitle": "Part Load Transport",
+    "services.partCopy": "Efficient transport for smaller shipments, urgent pallets, partial van capacity and flexible routes across the EU.",
+    "services.fullTitle": "Full Load Transport",
+    "services.fullCopy": "Dedicated van capacity for direct shipments where the client needs one vehicle, one route and clear delivery timing.",
+    "services.dispatchTitle": "Dispatch Services",
+    "services.dispatchCopy": "24/7 dispatch assistance, driver communication, route follow-up, shipment status updates and practical problem solving on the road.",
+    "services.docsTitle": "Import / Export Documents",
+    "services.docsCopy": "Support with necessary transport documentation for import and export, including CMR, POD, transport orders and delivery confirmations.",
+    "clients.eyebrow": "For clients",
+    "clients.title": "One contact for EU part loads and full loads",
+    "clients.copy": "When your shipment needs a fast answer, Sailaway Logistics gives you a direct process: confirmed van capacity, clear route details, driver communication, 24/7 dispatch support and document follow-up after delivery.",
+    "clients.bestTitle": "Best for",
+    "clients.bestCopy": "Part loads, full loads, urgent pallets, smaller cargo and dedicated sleeper-van routes across the EU.",
+    "clients.benefitTitle": "Client benefit",
+    "clients.benefitCopy": "Fast response, simple communication, clear shipment status, dispatch assistance and reliable import/export documentation support.",
+    "coverage.eyebrow": "Coverage",
+    "coverage.title": "Built for companies that need reliable EU van capacity",
+    "coverage.copy": "Sailaway Logistics works in partnership with Wolf Express DOO, established in 2022, combining modern logistics communication with practical road transport experience.",
+    "coverage.item1": "3.5t sleeper-cabin vans for EU freight",
+    "coverage.item2": "Part load and full load transport options",
+    "coverage.item3": "24/7 dispatch assistance for clients and drivers",
+    "coverage.item4": "Import, export and delivery document follow-up",
+    "coverage.partner": "In partnership with Wolf Express DOO, established in 2022.",
+    "map.eyebrow": "European coverage",
+    "map.title": "From capitals to small industrial towns",
+    "map.copy": "Our work is built around road transport across the whole European Union. The marked points show representative cities, regions and freight corridors where van transport is commonly needed. Coverage is not limited to the dots: we support pickups and deliveries in major cities, smaller towns, villages and industrial zones when accessible by road.",
+    "map.toolbar": "Representative EU freight coverage",
+    "map.toolbarStrong": "Part loads · Full loads · 24/7 dispatch",
+    "map.note": "Dots are representative service areas and common freight corridors, not a false claim of every exact completed delivery location.",
+    "process.eyebrow": "How it works",
+    "process.title": "A simple transport workflow",
+    "process.step1Title": "Send shipment details",
+    "process.step1Copy": "Share loading place, unloading place, cargo details, loading date, weight and whether it is part load or full load.",
+    "process.step2Title": "Confirm van availability",
+    "process.step2Copy": "We align timing, price, sleeper-van capacity, driver details and loading instructions before dispatch.",
+    "process.step3Title": "24/7 dispatch support",
+    "process.step3Copy": "Communication stays clear through pickup, transit and unloading so the client knows what is happening.",
+    "process.step4Title": "Close documents",
+    "process.step4Copy": "CMR, POD and necessary import/export transport documents are followed so the shipment can be closed cleanly.",
+    "contact.eyebrow": "Contact",
+    "contact.title": "Request EU sleeper-van freight capacity",
+    "contact.copy": "Send the route and shipment details. We will respond with availability, timing and pricing for part load or full load transport up to 3.5t.",
+    "contact.ceo": "CEO",
+    "contact.address": "Address",
+    "contact.spain": "Spain",
+    "contact.serbia": "Serbia",
+    "form.company": "Company name",
+    "form.route": "Loading and unloading route",
+    "form.routePlaceholder": "Example: Madrid, ES to Munich, DE",
+    "form.details": "Shipment details",
+    "form.detailsPlaceholder": "Cargo, weight, loading date, part load or full load, import/export documents",
+    "form.submit": "Send request",
+    "footer.prefix": "©",
+    "footer.copy": "Partnership with Wolf Express DOO, established in 2022. CEO: Marko Vukobratovic",
+    "language.eyebrow": "Choose language",
+    "language.title": "Select your preferred language"
+  },
+  es: {
+    "nav.services": "Servicios",
+    "nav.coverage": "Cobertura",
+    "nav.process": "Proceso",
+    "nav.contact": "Contacto",
+    "hero.eyebrow": "Transporte UE con furgones 3,5t con cabina dormitorio",
+    "hero.copy": "Transporte de carga parcial y carga completa en toda la Unión Europea, con asistencia dispatch 24/7 y soporte completo de documentación.",
+    "hero.primary": "Solicitar transporte",
+    "hero.secondary": "Ver servicios",
+    "metrics.eu": "cobertura en toda la Unión Europea",
+    "metrics.vans": "furgones con cabina dormitorio",
+    "metrics.dispatch": "asistencia dispatch",
+    "metrics.loads": "opciones de carga para clientes",
+    "services.eyebrow": "Qué hacemos",
+    "services.title": "Transporte UE con furgones 3,5t con cabina dormitorio",
+    "services.copy": "Sailaway Logistics trabaja con cargas parciales y completas en la UE, utilizando furgones de hasta 3,5t con cápsula dormitorio para rutas largas y planificación flexible.",
+    "services.partTitle": "Transporte de carga parcial",
+    "services.partCopy": "Transporte eficiente para envíos pequeños, palets urgentes, capacidad parcial de furgón y rutas flexibles por la UE.",
+    "services.fullTitle": "Transporte de carga completa",
+    "services.fullCopy": "Capacidad dedicada de furgón para envíos directos cuando el cliente necesita un vehículo, una ruta y tiempos claros.",
+    "services.dispatchTitle": "Servicios de dispatch",
+    "services.dispatchCopy": "Asistencia dispatch 24/7, comunicación con conductores, seguimiento de ruta, actualizaciones del envío y solución práctica de problemas en carretera.",
+    "services.docsTitle": "Documentos de importación / exportación",
+    "services.docsCopy": "Soporte con la documentación necesaria para importación y exportación, incluyendo CMR, POD, órdenes de transporte y confirmaciones de entrega.",
+    "clients.eyebrow": "Para clientes",
+    "clients.title": "Un solo contacto para cargas parciales y completas en la UE",
+    "clients.copy": "Cuando su envío necesita una respuesta rápida, Sailaway Logistics ofrece un proceso directo: capacidad confirmada, ruta clara, comunicación con el conductor, dispatch 24/7 y seguimiento documental después de la entrega.",
+    "clients.bestTitle": "Ideal para",
+    "clients.bestCopy": "Cargas parciales, cargas completas, palets urgentes, mercancía pequeña y rutas dedicadas con furgón dormitorio en la UE.",
+    "clients.benefitTitle": "Beneficio para el cliente",
+    "clients.benefitCopy": "Respuesta rápida, comunicación simple, estado claro del envío, asistencia dispatch y soporte fiable para documentación de importación/exportación.",
+    "coverage.eyebrow": "Cobertura",
+    "coverage.title": "Para empresas que necesitan capacidad fiable de furgones en la UE",
+    "coverage.copy": "Sailaway Logistics trabaja en colaboración con Wolf Express DOO, fundada en 2022, combinando comunicación logística moderna con experiencia práctica en transporte por carretera.",
+    "coverage.item1": "Furgones 3,5t con cabina dormitorio para transporte UE",
+    "coverage.item2": "Opciones de carga parcial y carga completa",
+    "coverage.item3": "Asistencia dispatch 24/7 para clientes y conductores",
+    "coverage.item4": "Seguimiento de documentos de importación, exportación y entrega",
+    "coverage.partner": "En colaboración con Wolf Express DOO, fundada en 2022.",
+    "map.eyebrow": "Cobertura europea",
+    "map.title": "De capitales a pequeñas zonas industriales",
+    "map.copy": "Nuestro trabajo se basa en el transporte por carretera en toda la Unión Europea. Los puntos marcados muestran ciudades, regiones y corredores representativos donde se necesita transporte con furgón. La cobertura no se limita a los puntos: realizamos recogidas y entregas en grandes ciudades, pueblos, aldeas y zonas industriales accesibles por carretera.",
+    "map.toolbar": "Cobertura representativa de transporte UE",
+    "map.toolbarStrong": "Cargas parciales · Cargas completas · Dispatch 24/7",
+    "map.note": "Los puntos son áreas representativas de servicio y corredores comunes, no una afirmación falsa de cada entrega exacta realizada.",
+    "process.eyebrow": "Cómo funciona",
+    "process.title": "Un flujo de transporte simple",
+    "process.step1Title": "Enviar detalles del envío",
+    "process.step1Copy": "Comparta lugar de carga, descarga, detalles de mercancía, fecha, peso y si es carga parcial o completa.",
+    "process.step2Title": "Confirmar disponibilidad",
+    "process.step2Copy": "Acordamos tiempo, precio, capacidad del furgón dormitorio, datos del conductor e instrucciones de carga.",
+    "process.step3Title": "Soporte dispatch 24/7",
+    "process.step3Copy": "La comunicación se mantiene clara desde la carga hasta el tránsito y la descarga.",
+    "process.step4Title": "Cerrar documentos",
+    "process.step4Copy": "Seguimos CMR, POD y documentos necesarios de importación/exportación para cerrar el transporte correctamente.",
+    "contact.eyebrow": "Contacto",
+    "contact.title": "Solicite capacidad de furgón dormitorio en la UE",
+    "contact.copy": "Envíe la ruta y los detalles del envío. Responderemos con disponibilidad, tiempos y precio para carga parcial o completa hasta 3,5t.",
+    "contact.ceo": "CEO",
+    "contact.address": "Dirección",
+    "contact.spain": "España",
+    "contact.serbia": "Serbia",
+    "form.company": "Nombre de la empresa",
+    "form.route": "Ruta de carga y descarga",
+    "form.routePlaceholder": "Ejemplo: Madrid, ES a Munich, DE",
+    "form.details": "Detalles del envío",
+    "form.detailsPlaceholder": "Mercancía, peso, fecha de carga, carga parcial o completa, documentos import/export",
+    "form.submit": "Enviar solicitud",
+    "footer.prefix": "©",
+    "footer.copy": "Colaboración con Wolf Express DOO, fundada en 2022. CEO: Marko Vukobratovic",
+    "language.eyebrow": "Elegir idioma",
+    "language.title": "Seleccione su idioma preferido"
+  },
+  fr: {
+    "nav.services": "Services",
+    "nav.coverage": "Couverture",
+    "nav.process": "Processus",
+    "nav.contact": "Contact",
+    "hero.eyebrow": "Transport UE en vans 3,5t avec cabine couchette",
+    "hero.copy": "Transport en chargement partiel et complet dans toute l'Union européenne, avec assistance dispatch 24/7 et support documentaire complet.",
+    "hero.primary": "Demander un transport",
+    "hero.secondary": "Voir les services",
+    "metrics.eu": "couverture dans toute l'Union européenne",
+    "metrics.vans": "vans avec cabine couchette",
+    "metrics.dispatch": "assistance dispatch",
+    "metrics.loads": "options de chargement clients",
+    "services.eyebrow": "Nos services",
+    "services.title": "Transport UE avec vans 3,5t à cabine couchette",
+    "services.copy": "Sailaway Logistics se concentre sur les chargements partiels et complets dans l'UE, avec des vans jusqu'à 3,5t équipés de capsules couchettes pour les longues distances et une planification flexible.",
+    "services.partTitle": "Transport en chargement partiel",
+    "services.partCopy": "Transport efficace pour petits envois, palettes urgentes, capacité partielle et routes flexibles dans l'UE.",
+    "services.fullTitle": "Transport en chargement complet",
+    "services.fullCopy": "Capacité dédiée pour les envois directs lorsqu'un client a besoin d'un véhicule, d'une route et d'un délai clair.",
+    "services.dispatchTitle": "Services de dispatch",
+    "services.dispatchCopy": "Assistance dispatch 24/7, communication chauffeur, suivi de route, mises à jour du transport et résolution pratique des problèmes.",
+    "services.docsTitle": "Documents import / export",
+    "services.docsCopy": "Support pour les documents nécessaires à l'import et à l'export, y compris CMR, POD, ordres de transport et confirmations de livraison.",
+    "clients.eyebrow": "Pour les clients",
+    "clients.title": "Un seul contact pour chargements partiels et complets en UE",
+    "clients.copy": "Quand votre expédition demande une réponse rapide, Sailaway Logistics propose un processus direct: capacité confirmée, détails de route, communication chauffeur, dispatch 24/7 et suivi documentaire après livraison.",
+    "clients.bestTitle": "Idéal pour",
+    "clients.bestCopy": "Chargements partiels, chargements complets, palettes urgentes, petites marchandises et routes dédiées en van couchette dans l'UE.",
+    "clients.benefitTitle": "Avantage client",
+    "clients.benefitCopy": "Réponse rapide, communication simple, statut clair du transport, assistance dispatch et support fiable des documents import/export.",
+    "coverage.eyebrow": "Couverture",
+    "coverage.title": "Pour les entreprises qui ont besoin de capacité fiable en vans UE",
+    "coverage.copy": "Sailaway Logistics travaille en partenariat avec Wolf Express DOO, fondée en 2022, en combinant communication logistique moderne et expérience pratique du transport routier.",
+    "coverage.item1": "Vans 3,5t avec cabine couchette pour le fret UE",
+    "coverage.item2": "Options de chargement partiel et complet",
+    "coverage.item3": "Assistance dispatch 24/7 pour clients et chauffeurs",
+    "coverage.item4": "Suivi des documents d'import, d'export et de livraison",
+    "coverage.partner": "En partenariat avec Wolf Express DOO, fondée en 2022.",
+    "map.eyebrow": "Couverture européenne",
+    "map.title": "Des capitales aux petites zones industrielles",
+    "map.copy": "Notre travail est construit autour du transport routier dans toute l'Union européenne. Les points marqués montrent des villes, régions et corridors représentatifs où le transport en van est souvent nécessaire. La couverture ne se limite pas aux points: nous soutenons les enlèvements et livraisons dans les grandes villes, petites villes, villages et zones industrielles accessibles par route.",
+    "map.toolbar": "Couverture représentative du fret UE",
+    "map.toolbarStrong": "Chargements partiels · Chargements complets · Dispatch 24/7",
+    "map.note": "Les points sont des zones de service et corridors représentatifs, pas une fausse affirmation de chaque lieu exact déjà livré.",
+    "process.eyebrow": "Fonctionnement",
+    "process.title": "Un processus de transport simple",
+    "process.step1Title": "Envoyer les détails",
+    "process.step1Copy": "Partagez lieu de chargement, livraison, détails marchandises, date, poids et chargement partiel ou complet.",
+    "process.step2Title": "Confirmer la disponibilité",
+    "process.step2Copy": "Nous alignons délai, prix, capacité du van couchette, données chauffeur et instructions de chargement.",
+    "process.step3Title": "Support dispatch 24/7",
+    "process.step3Copy": "La communication reste claire pendant l'enlèvement, le transit et la livraison.",
+    "process.step4Title": "Clôture des documents",
+    "process.step4Copy": "CMR, POD et documents import/export nécessaires sont suivis pour clôturer le transport proprement.",
+    "contact.eyebrow": "Contact",
+    "contact.title": "Demander une capacité van couchette en UE",
+    "contact.copy": "Envoyez la route et les détails. Nous répondrons avec disponibilité, délai et prix pour chargement partiel ou complet jusqu'à 3,5t.",
+    "contact.ceo": "CEO",
+    "contact.address": "Adresse",
+    "contact.spain": "Espagne",
+    "contact.serbia": "Serbie",
+    "form.company": "Nom de l'entreprise",
+    "form.route": "Route de chargement et livraison",
+    "form.routePlaceholder": "Exemple: Madrid, ES à Munich, DE",
+    "form.details": "Détails de l'expédition",
+    "form.detailsPlaceholder": "Marchandise, poids, date, chargement partiel ou complet, documents import/export",
+    "form.submit": "Envoyer la demande",
+    "footer.prefix": "©",
+    "footer.copy": "Partenariat avec Wolf Express DOO, fondée en 2022. CEO: Marko Vukobratovic",
+    "language.eyebrow": "Choisir la langue",
+    "language.title": "Sélectionnez votre langue préférée"
+  },
+  sr: {
+    "nav.services": "Usluge",
+    "nav.coverage": "Pokrivenost",
+    "nav.process": "Proces",
+    "nav.contact": "Kontakt",
+    "hero.eyebrow": "EU prevoz kombijima do 3.5t sa spavacom kabinom",
+    "hero.copy": "Parcijalni i kompletni utovari kroz celu Evropsku uniju, uz 24/7 dispatch podrsku i kompletnu pomoc oko dokumentacije.",
+    "hero.primary": "Posalji upit",
+    "hero.secondary": "Pogledaj usluge",
+    "metrics.eu": "pokrivenost cele Evropske unije",
+    "metrics.vans": "fokus na kombije sa spavacom kabinom",
+    "metrics.dispatch": "dispatch podrska",
+    "metrics.loads": "opcije utovara za klijente",
+    "services.eyebrow": "Sta radimo",
+    "services.title": "EU prevoz kombijima do 3.5t sa spavacom kabinom",
+    "services.copy": "Sailaway Logistics je fokusiran na parcijalne i kompletne utovare kroz EU, koristeci kombije do 3.5t sa spavacim kapsulama za duge relacije i fleksibilno planiranje.",
+    "services.partTitle": "Parcijalni utovari",
+    "services.partCopy": "Efikasan prevoz za manje posiljke, hitne palete, delimican kapacitet kombija i fleksibilne rute kroz EU.",
+    "services.fullTitle": "Kompletni utovari",
+    "services.fullCopy": "Namenski kapacitet kombija za direktne posiljke kada klijent treba jedno vozilo, jednu rutu i jasno vreme isporuke.",
+    "services.dispatchTitle": "Dispatch usluge",
+    "services.dispatchCopy": "24/7 dispatch podrska, komunikacija sa vozacem, pracenje rute, status posiljke i prakticno resavanje problema na putu.",
+    "services.docsTitle": "Import / Export dokumentacija",
+    "services.docsCopy": "Podrska za potrebnu transportnu dokumentaciju za uvoz i izvoz, ukljucujuci CMR, POD, transportne naloge i potvrde isporuke.",
+    "clients.eyebrow": "Za klijente",
+    "clients.title": "Jedan kontakt za EU parcijalne i kompletne utovare",
+    "clients.copy": "Kada vam treba brz odgovor za posiljku, Sailaway Logistics daje direktan proces: potvrdjen kapacitet kombija, jasne detalje rute, komunikaciju sa vozacem, 24/7 dispatch i pracenje dokumentacije posle isporuke.",
+    "clients.bestTitle": "Najbolje za",
+    "clients.bestCopy": "Parcijalne utovare, kompletne utovare, hitne palete, manju robu i namenske rute kombijima sa spavacom kabinom kroz EU.",
+    "clients.benefitTitle": "Prednost za klijenta",
+    "clients.benefitCopy": "Brz odgovor, jednostavna komunikacija, jasan status posiljke, dispatch podrska i pouzdana pomoc oko import/export dokumentacije.",
+    "coverage.eyebrow": "Pokrivenost",
+    "coverage.title": "Za firme kojima treba pouzdan kapacitet kombija u EU",
+    "coverage.copy": "Sailaway Logistics radi u partnerstvu sa Wolf Express DOO, osnovanim 2022. godine, kombinujući modernu logisticku komunikaciju sa prakticnim iskustvom drumskog transporta.",
+    "coverage.item1": "Kombiji do 3.5t sa spavacom kabinom za EU transport",
+    "coverage.item2": "Opcije parcijalnog i kompletnog utovara",
+    "coverage.item3": "24/7 dispatch podrska za klijente i vozace",
+    "coverage.item4": "Pracenje import, export i dostavne dokumentacije",
+    "coverage.partner": "U partnerstvu sa Wolf Express DOO, osnovanim 2022. godine.",
+    "map.eyebrow": "Evropska pokrivenost",
+    "map.title": "Od glavnih gradova do manjih industrijskih mesta",
+    "map.copy": "Nas rad je zasnovan na drumskom transportu kroz celu Evropsku uniju. Oznacene tacke prikazuju reprezentativne gradove, regione i transportne koridore gde je transport kombijem cesto potreban. Pokrivenost nije ogranicena samo na tacke: podrzavamo utovare i istovare u velikim gradovima, manjim mestima, selima i industrijskim zonama dostupnim putem.",
+    "map.toolbar": "Reprezentativna EU freight pokrivenost",
+    "map.toolbarStrong": "Parcijalni utovari · Kompletni utovari · Dispatch 24/7",
+    "map.note": "Tacke su reprezentativne servisne oblasti i cesti koridori, ne lazna tvrdnja o svakoj tacnoj lokaciji zavrsene isporuke.",
+    "process.eyebrow": "Kako funkcionise",
+    "process.title": "Jednostavan transportni proces",
+    "process.step1Title": "Posaljite detalje posiljke",
+    "process.step1Copy": "Posaljite mesto utovara, istovara, detalje robe, datum utovara, tezinu i da li je parcijalni ili kompletan utovar.",
+    "process.step2Title": "Potvrda dostupnosti kombija",
+    "process.step2Copy": "Uskladjujemo vreme, cenu, kapacitet kombija sa spavacom kabinom, podatke vozaca i instrukcije za utovar.",
+    "process.step3Title": "24/7 dispatch podrska",
+    "process.step3Copy": "Komunikacija ostaje jasna kroz utovar, tranzit i istovar da klijent zna sta se desava.",
+    "process.step4Title": "Zatvaranje dokumentacije",
+    "process.step4Copy": "Pratimo CMR, POD i potrebnu import/export dokumentaciju da se transport zatvori uredno.",
+    "contact.eyebrow": "Kontakt",
+    "contact.title": "Posaljite upit za EU kombi transport",
+    "contact.copy": "Posaljite rutu i detalje posiljke. Odgovoricemo sa dostupnoscu, vremenom i cenom za parcijalni ili kompletni utovar do 3.5t.",
+    "contact.ceo": "CEO",
+    "contact.address": "Adresa",
+    "contact.spain": "Spanija",
+    "contact.serbia": "Srbija",
+    "form.company": "Naziv firme",
+    "form.route": "Ruta utovara i istovara",
+    "form.routePlaceholder": "Primer: Madrid, ES do Munich, DE",
+    "form.details": "Detalji posiljke",
+    "form.detailsPlaceholder": "Roba, tezina, datum utovara, parcijalni ili kompletan utovar, import/export dokumentacija",
+    "form.submit": "Posalji upit",
+    "footer.prefix": "©",
+    "footer.copy": "Partnerstvo sa Wolf Express DOO, osnovanim 2022. godine. CEO: Marko Vukobratovic",
+    "language.eyebrow": "Izaberite jezik",
+    "language.title": "Izaberite zeljeni jezik"
+  }
+};
+
+const languageModal = document.querySelector("[data-language-modal]");
+const languageOpenButtons = document.querySelectorAll("[data-language-open]");
+const currentLanguage = document.querySelector("[data-current-language]");
+const languageButtons = document.querySelectorAll("[data-language-choice]");
+const supportedLanguages = Object.keys(translations);
+
+function setLanguage(lang, shouldStore = true) {
+  const safeLang = supportedLanguages.includes(lang) ? lang : "en";
+  const dictionary = translations[safeLang];
+
+  document.documentElement.lang = safeLang;
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    if (dictionary[key]) element.textContent = dictionary[key];
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.dataset.i18nPlaceholder;
+    if (dictionary[key]) element.setAttribute("placeholder", dictionary[key]);
+  });
+
+  if (currentLanguage) currentLanguage.textContent = safeLang.toUpperCase();
+  languageButtons.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.languageChoice === safeLang);
+  });
+  if (shouldStore) localStorage.setItem("sailaway-language", safeLang);
+}
+
+function openLanguageModal() {
+  if (!languageModal) return;
+  languageModal.classList.add("is-open");
+  languageModal.setAttribute("aria-hidden", "false");
+}
+
+function closeLanguageModal() {
+  if (!languageModal) return;
+  languageModal.classList.remove("is-open");
+  languageModal.setAttribute("aria-hidden", "true");
+}
+
+languageOpenButtons.forEach((button) => {
+  button.addEventListener("click", openLanguageModal);
+});
+
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    setLanguage(button.dataset.languageChoice);
+    closeLanguageModal();
+  });
+});
+
+const storedLanguage = localStorage.getItem("sailaway-language");
+setLanguage(storedLanguage || "en", Boolean(storedLanguage));
+if (!storedLanguage) openLanguageModal();
+
 const coveragePoints = [
   ["Madrid", -3.7038, 40.4168], ["Barcelona", 2.1734, 41.3851], ["Valencia", -0.3763, 39.4699],
   ["Seville", -5.9845, 37.3891], ["Bilbao", -2.9350, 43.2630], ["Zaragoza", -0.8891, 41.6488],
