@@ -133,17 +133,17 @@ a {
 
 .hero-content {
   position: relative;
-  width: min(760px, 100%);
+  width: min(860px, 100%);
 }
 
 .hero-logo {
-  width: 150px;
-  height: 150px;
+  width: clamp(240px, 19vw, 380px);
+  height: clamp(240px, 19vw, 380px);
   object-fit: contain;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 22px;
+  padding: clamp(10px, 1.2vw, 18px);
+  margin-bottom: 28px;
 }
 
 .eyebrow {
@@ -612,8 +612,8 @@ textarea:focus {
   }
 
   .hero-logo {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
   }
 
   .intro-grid,
