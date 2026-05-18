@@ -370,6 +370,95 @@ h3 {
   line-height: 1.5;
 }
 
+.fleet-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 22px clamp(18px, 4vw, 42px) 86px;
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.fleet-card {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(6, 25, 47, 0.06);
+}
+
+.fleet-card.highlight {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--navy), var(--teal));
+}
+
+.fleet-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 26px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--teal);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.fleet-card.highlight .fleet-number {
+  color: var(--navy);
+  background: #fff;
+}
+
+.fleet-card p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.fleet-card.highlight p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.equipment-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  overflow: hidden;
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.equipment-strip div {
+  padding: 20px;
+  background: var(--soft);
+}
+
+.equipment-strip strong,
+.equipment-strip span {
+  display: block;
+}
+
+.equipment-strip strong {
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+
+.equipment-strip span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .road-visual {
   margin: 0;
   overflow: hidden;
@@ -722,6 +811,8 @@ textarea:focus {
 @media (max-width: 980px) {
   .intro-grid,
   .services-grid,
+  .fleet-grid,
+  .equipment-strip,
   .process-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -792,11 +883,14 @@ textarea:focus {
 
   .intro-grid,
   .services-grid,
+  .fleet-grid,
+  .equipment-strip,
   .process-grid {
     grid-template-columns: 1fr;
   }
 
   .section,
+  .fleet-section,
   .visual-section,
   .split-section,
   .map-section,
