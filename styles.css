@@ -329,6 +329,83 @@ h3 {
   margin-bottom: 0;
 }
 
+.freight-match-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 22px clamp(18px, 4vw, 42px) 86px;
+}
+
+.freight-match-copy {
+  max-width: 800px;
+  margin-bottom: 28px;
+}
+
+.freight-match-copy p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.freight-match-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.match-step {
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(6, 25, 47, 0.06);
+}
+
+.match-step span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.match-step strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--navy);
+  font-size: 20px;
+}
+
+.match-step p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.match-countries,
+.freight-country-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.match-countries {
+  margin-top: 16px;
+}
+
+.match-countries span,
+.freight-country-strip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: var(--navy);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  font-weight: 800;
+  font-size: 13px;
+}
+
 .seo-link-section {
   max-width: 1160px;
   margin: 0 auto;
@@ -1059,6 +1136,131 @@ textarea:focus {
   line-height: 1.5;
 }
 
+.freight-float-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 70;
+  min-height: 48px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 18px;
+  color: #fff;
+  background: var(--teal);
+  box-shadow: 0 14px 34px rgba(6, 25, 47, 0.24);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.freight-float-button:hover {
+  background: #087873;
+}
+
+.freight-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(6, 25, 47, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.freight-modal.is-open {
+  display: flex;
+}
+
+.freight-dialog {
+  position: relative;
+  width: min(1040px, 100%);
+  max-height: min(88vh, 820px);
+  overflow: auto;
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
+}
+
+.freight-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--navy);
+  background: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.freight-dialog-grid {
+  display: grid;
+  grid-template-columns: 0.94fr 1.06fr;
+  gap: 28px;
+  padding: clamp(24px, 4vw, 46px);
+}
+
+.freight-dialog h2 {
+  margin-bottom: 18px;
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+.freight-dialog p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.freight-benefits {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 22px 0;
+  list-style: none;
+}
+
+.freight-benefits li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.freight-benefits li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.42em;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: inset 0 0 0 3px #e9f3df;
+}
+
+.freight-mini-form {
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.freight-mini-form .button.secondary {
+  color: var(--navy);
+  border-color: var(--line);
+  background: #fff;
+}
+
 .language-modal {
   position: fixed;
   inset: 0;
@@ -1130,6 +1332,7 @@ textarea:focus {
   .seo-link-grid,
   .quote-form,
   .fleet-grid,
+  .freight-match-panel,
   .reputation-grid,
   .equipment-strip,
   .process-grid {
@@ -1138,6 +1341,7 @@ textarea:focus {
 
   .split-section,
   .visual-section,
+  .freight-dialog-grid,
   .map-section,
   .contact-section,
   .service-hero-page,
@@ -1207,6 +1411,7 @@ textarea:focus {
   .seo-link-grid,
   .quote-form,
   .fleet-grid,
+  .freight-match-panel,
   .reputation-grid,
   .equipment-strip,
   .process-grid {
@@ -1215,6 +1420,7 @@ textarea:focus {
 
   .section,
   .seo-link-section,
+  .freight-match-section,
   .fleet-section,
   .reputation-section,
   .visual-section,
@@ -1246,6 +1452,20 @@ textarea:focus {
   .rating-bar strong,
   .timocom-lines strong {
     text-align: left;
+  }
+
+  .freight-float-button {
+    left: 18px;
+    right: 18px;
+    width: calc(100% - 36px);
+  }
+
+  .freight-dialog {
+    max-height: 92vh;
+  }
+
+  .freight-dialog-grid {
+    padding: 24px 18px;
   }
 
   .road-visual img {

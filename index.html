@@ -109,6 +109,7 @@
           <p class="hero-copy" data-i18n="hero.copy">Part load and full load transport across the whole European Union, with 24/7 dispatch assistance and complete document support.</p>
           <div class="hero-actions">
             <a class="button primary" href="request-quote.html" data-i18n="hero.primary">Request transport</a>
+            <button class="button secondary" type="button" data-freight-open>Find a vehicle</button>
             <a class="button secondary" href="#services" data-i18n="hero.secondary">View services</a>
           </div>
         </div>
@@ -158,6 +159,40 @@
             <h3 data-i18n="services.docsTitle">Import / Export Documents</h3>
             <p data-i18n="services.docsCopy">Support with necessary transport documentation for import and export, including CMR, POD, transport orders and delivery confirmations.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="freight-match-section" aria-label="Freight and vehicle matching">
+        <div class="freight-match-copy">
+          <p class="eyebrow">For companies with goods</p>
+          <h2>Tell us what you need to move. We help find the right vehicle.</h2>
+          <p>If your company has goods ready for transport, Sailaway Logistics can coordinate the search for a suitable van or other vehicle, compare route options, align the loading date and work around the target price you want to pay.</p>
+        </div>
+        <div class="freight-match-panel">
+          <div class="match-step">
+            <span>01</span>
+            <strong>Share shipment details</strong>
+            <p>Loading place, unloading place, cargo size, weight, date and special needs.</p>
+          </div>
+          <div class="match-step">
+            <span>02</span>
+            <strong>Set target price</strong>
+            <p>Tell us the budget range you prefer, and we check realistic transport options.</p>
+          </div>
+          <div class="match-step">
+            <span>03</span>
+            <strong>Vehicle coordination</strong>
+            <p>We look for a suitable van or vehicle and keep the client updated clearly.</p>
+          </div>
+        </div>
+        <div class="match-countries" aria-label="Main freight matching countries">
+          <span>Spain</span>
+          <span>Germany</span>
+          <span>Netherlands</span>
+          <span>Belgium</span>
+          <span>Serbia</span>
+          <span>Croatia</span>
+          <span>Hungary</span>
         </div>
       </section>
 
@@ -547,6 +582,60 @@
       <img src="assets/sailaway-logo.png" alt="Sailaway Logistics logo">
       <p><span data-i18n="footer.prefix">©</span> <span data-year></span> Sailaway Logistics. <span data-i18n="footer.copy">Partnership with Wolf Express DOO, established in 2022. CEO: Marko Vukobratovic</span> · dispo@wolfexpress.rs · <a href="https://www.linkedin.com/in/marko-vukobratovic-845b98177/" target="_blank" rel="noopener">LinkedIn</a></p>
     </footer>
+
+    <button class="freight-float-button" type="button" data-freight-open>Find vehicle for goods</button>
+
+    <div class="freight-modal" data-freight-modal aria-hidden="true">
+      <div class="freight-dialog" role="dialog" aria-modal="true" aria-labelledby="freight-title">
+        <button class="freight-close" type="button" data-freight-close aria-label="Close freight request popup">×</button>
+        <div class="freight-dialog-grid">
+          <div>
+            <p class="eyebrow">Need transport for goods?</p>
+            <h2 id="freight-title">We help clients find a suitable transport vehicle across Europe</h2>
+            <p>If you have cargo moving from any point in the EU, Sailaway Logistics can help coordinate a suitable van or other vehicle, agree the loading date with you, check route options and work around your target price.</p>
+            <ul class="freight-benefits">
+              <li>Tell us where the goods load and unload.</li>
+              <li>Share dimensions, weight, date and special requirements.</li>
+              <li>Tell us the price range you would like to pay.</li>
+              <li>We look for a suitable transport option and keep you updated.</li>
+            </ul>
+            <div class="freight-country-strip">
+              <span>Spain</span>
+              <span>Germany</span>
+              <span>Netherlands</span>
+              <span>Belgium</span>
+              <span>Serbia</span>
+              <span>Croatia</span>
+              <span>Hungary</span>
+            </div>
+          </div>
+          <form class="freight-mini-form" action="mailto:dispo@wolfexpress.rs" method="post" enctype="text/plain">
+            <label>
+              Company or contact
+              <input type="text" name="Company or contact" required>
+            </label>
+            <label>
+              Route
+              <input type="text" name="Route" placeholder="Example: Valencia, ES to Hamburg, DE" required>
+            </label>
+            <label>
+              Loading date
+              <input type="text" name="Loading date" placeholder="Example: 28 May 2026">
+            </label>
+            <label>
+              Target price / budget
+              <input type="text" name="Target price" placeholder="Example: your preferred price range">
+            </label>
+            <label>
+              Goods and vehicle needs
+              <textarea name="Goods and vehicle needs" rows="4" placeholder="Cargo, weight, dimensions, van or other vehicle, loading needs"></textarea>
+            </label>
+            <button class="button primary full" type="submit">Send freight request</button>
+            <a class="button secondary full freight-whatsapp" href="https://wa.me/34624246275" target="_blank" rel="noopener">WhatsApp Spain number</a>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <div class="language-modal" data-language-modal aria-hidden="true">
       <div class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-title">

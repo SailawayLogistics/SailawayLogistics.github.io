@@ -2,6 +2,9 @@ const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const year = document.querySelector("[data-year]");
+const freightModal = document.querySelector("[data-freight-modal]");
+const freightOpenButtons = document.querySelectorAll("[data-freight-open]");
+const freightCloseButton = document.querySelector("[data-freight-close]");
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -27,6 +30,63 @@ if (navToggle && nav) {
       navToggle.setAttribute("aria-expanded", "false");
     }
   });
+}
+
+const openFreightModal = () => {
+  if (!freightModal) return;
+  freightModal.classList.add("is-open");
+  freightModal.setAttribute("aria-hidden", "false");
+};
+
+const closeFreightModal = () => {
+  if (!freightModal) return;
+  freightModal.classList.remove("is-open");
+  freightModal.setAttribute("aria-hidden", "true");
+};
+
+const hasSeenFreightPopup = () => {
+  try {
+    return sessionStorage.getItem("sailawayFreightPopupShown") === "true";
+  } catch (error) {
+    return false;
+  }
+};
+
+const markFreightPopupSeen = () => {
+  try {
+    sessionStorage.setItem("sailawayFreightPopupShown", "true");
+  } catch (error) {
+    // Some privacy modes block session storage; the popup still works manually.
+  }
+};
+
+freightOpenButtons.forEach((button) => {
+  button.addEventListener("click", openFreightModal);
+});
+
+if (freightCloseButton) {
+  freightCloseButton.addEventListener("click", closeFreightModal);
+}
+
+if (freightModal) {
+  freightModal.addEventListener("click", (event) => {
+    if (event.target === freightModal) {
+      closeFreightModal();
+    }
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && freightModal.classList.contains("is-open")) {
+      closeFreightModal();
+    }
+  });
+
+  if (!hasSeenFreightPopup()) {
+    window.setTimeout(() => {
+      openFreightModal();
+      markFreightPopupSeen();
+    }, 1600);
+  }
 }
 
 const translations = {
