@@ -97,7 +97,7 @@ const translations = {
     "nav.contact": "Contact",
     "hero.eyebrow": "EU sleeper-cabin van freight up to 3.5t",
     "hero.copy": "Part load and full load transport across the whole European Union, with 24/7 dispatch assistance and complete document support.",
-    "hero.primary": "Request transport",
+    "hero.primary": "Offer a Load",
     "hero.secondary": "View services",
     "metrics.eu": "whole European Union coverage",
     "metrics.vans": "sleeper-cabin van focus",
