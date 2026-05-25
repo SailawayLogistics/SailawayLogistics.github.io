@@ -547,6 +547,36 @@ h3 {
   grid-column: 1 / -1;
 }
 
+.faq-strip {
+  background: #fff;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.faq-grid article {
+  min-height: 210px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.faq-grid h3 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: 20px;
+}
+
+.faq-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .visual-section {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -1344,7 +1374,8 @@ select:focus {
   .freight-match-panel,
   .reputation-grid,
   .equipment-strip,
-  .process-grid {
+  .process-grid,
+  .faq-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1423,7 +1454,8 @@ select:focus {
   .freight-match-panel,
   .reputation-grid,
   .equipment-strip,
-  .process-grid {
+  .process-grid,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 
