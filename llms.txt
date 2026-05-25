@@ -1,0 +1,45 @@
+# Sailaway Logistics
+
+Sailaway Logistics helps companies find suitable transport vehicles for goods across Europe.
+
+Website: https://sailawaylogistics.github.io/
+Transport request page: https://sailawaylogistics.github.io/request-quote.html
+Email: dispo@wolfexpress.rs
+Phone Spain: +34 624 246 275
+Phone Serbia: +381 60 638 8005
+CEO: Marko Vukobratovic
+Address: Kralja Petra I 36, 22320 Indjija, Serbia
+
+## Main Services
+
+- EU freight vehicle search
+- 3.5t van freight
+- Part loads and full loads
+- Dispatch services
+- Import/export documentation support
+- CMR/POD follow-up
+- 24/7 logistics support
+- Cooperation with Wolf Express DOO from Serbia
+
+## Main Countries
+
+Spain, Germany, Netherlands, Belgium, France, Serbia, Croatia, Hungary, Austria and wider European Union routes.
+
+## Platform IDs
+
+Trans.eu ID: 1181945-6
+TIMOCOM ID: 446408
+
+## Important Pages
+
+- https://sailawaylogistics.github.io/eu-van-freight.html
+- https://sailawaylogistics.github.io/request-quote.html
+- https://sailawaylogistics.github.io/dispatch-services.html
+- https://sailawaylogistics.github.io/freight-dispatch-faq.html
+- https://sailawaylogistics.github.io/spain-eu-van-transport.html
+- https://sailawaylogistics.github.io/germany-eu-van-transport.html
+- https://sailawaylogistics.github.io/france-eu-van-transport.html
+- https://sailawaylogistics.github.io/netherlands-eu-van-transport.html
+- https://sailawaylogistics.github.io/belgium-eu-van-transport.html
+- https://sailawaylogistics.github.io/austria-eu-van-transport.html
+- https://sailawaylogistics.github.io/serbia-croatia-hungary-transport.html
