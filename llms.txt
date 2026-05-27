@@ -4,6 +4,9 @@ Sailaway Logistics helps companies find suitable transport vehicles for goods ac
 
 Website: https://sailawaylogistics.github.io/
 Transport request page: https://sailawaylogistics.github.io/request-quote.html
+Transport inside the EU: https://sailawaylogistics.github.io/transport-inside-eu.html
+Part load transport Europe: https://sailawaylogistics.github.io/part-load-transport-europe.html
+Full load transport Europe: https://sailawaylogistics.github.io/full-load-transport-europe.html
 Email: dispo@wolfexpress.rs
 Phone Spain: +34 624 246 275
 Phone Serbia: +381 60 638 8005
@@ -34,6 +37,9 @@ TIMOCOM ID: 446408
 
 - https://sailawaylogistics.github.io/eu-van-freight.html
 - https://sailawaylogistics.github.io/request-quote.html
+- https://sailawaylogistics.github.io/transport-inside-eu.html
+- https://sailawaylogistics.github.io/part-load-transport-europe.html
+- https://sailawaylogistics.github.io/full-load-transport-europe.html
 - https://sailawaylogistics.github.io/dispatch-services.html
 - https://sailawaylogistics.github.io/freight-dispatch-faq.html
 - https://sailawaylogistics.github.io/spain-eu-van-transport.html
