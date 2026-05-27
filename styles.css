@@ -444,38 +444,69 @@ h3 {
 .seo-link-section {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 clamp(18px, 4vw, 42px) 86px;
+  padding: 22px clamp(18px, 4vw, 42px) 72px;
+}
+
+.seo-link-section .section-heading {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) 1fr;
+  gap: 24px;
+  align-items: end;
+  max-width: none;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.seo-link-section .section-heading h2 {
+  max-width: 520px;
+  font-size: clamp(28px, 3vw, 40px);
+}
+
+.seo-link-section .section-heading p:not(.eyebrow) {
+  max-width: 620px;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .seo-link-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .seo-link-grid a {
   display: grid;
-  gap: 10px;
-  min-height: 170px;
-  padding: 22px;
+  gap: 8px;
+  min-height: 124px;
+  padding: 16px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--soft);
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(6, 25, 47, 0.04);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .seo-link-grid a:hover {
   border-color: var(--teal);
   box-shadow: 0 10px 28px rgba(6, 25, 47, 0.08);
+  transform: translateY(-2px);
 }
 
 .seo-link-grid strong {
   color: var(--navy);
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .seo-link-grid span {
   color: var(--muted);
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.45;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .service-page {
@@ -1629,6 +1660,11 @@ select:focus {
 
   .quote-trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .seo-link-section .section-heading {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .match-countries {
