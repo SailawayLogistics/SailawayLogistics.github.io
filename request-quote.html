@@ -11,11 +11,11 @@
       gtag('js', new Date());
       gtag('config', 'G-F2PL5XNK4D');
     </script>
-    <meta name="description" content="Offer your EU shipment to Sailaway Logistics. Send loading place, unloading place, cargo details, target price, loading date and vehicle needs for vans or other transport vehicles.">
+    <meta name="description" content="Offer your EU shipment to Sailaway Logistics. Send loading and unloading places, cargo dimensions, weight, pallets, target price, documents, date and vehicle needs for van freight or other transport vehicles.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sailawaylogistics.github.io/request-quote.html">
     <meta property="og:title" content="Offer Transportation / Request Vehicle | Sailaway Logistics">
-    <meta property="og:description" content="Companies with goods can send route, cargo, loading date, target price and required vehicle details directly to Sailaway Logistics.">
+    <meta property="og:description" content="Companies with goods can send route, cargo dimensions, weight, pallets, loading date, target price and required vehicle details directly to Sailaway Logistics.">
     <meta property="og:image" content="https://sailawaylogistics.github.io/assets/sailaway-hero-banner.png">
     <title>Offer Transportation / Request Vehicle | Sailaway Logistics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,6 +76,14 @@
               "@type": "Answer",
               "text": "Yes. Sailaway Logistics supports part loads, full loads, dedicated 3.5t van freight and suitable vehicle search for wider EU transport needs."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Sailaway Logistics support transport documents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Sailaway Logistics can support CMR, POD, delivery confirmation, import/export document coordination and 24/7 dispatch updates depending on the shipment."
+            }
           }
         ]
       }
@@ -106,9 +114,9 @@
         </div>
         <div class="service-hero-card">
           <strong>What clients can send</strong>
-          <p>Route, loading date, cargo type, dimensions, weight, special loading needs, target price and required vehicle type.</p>
+          <p>Route, date and time, cargo type, dimensions, weight, pallets, loading method, documents, target price and required vehicle type.</p>
           <strong>Main focus countries</strong>
-          <p>Spain, Germany, Netherlands, Belgium, Serbia, Croatia and Hungary, with support for wider EU transport needs.</p>
+          <p>Spain, Germany, Netherlands, Belgium, France, Serbia, Croatia and Hungary, with support for wider EU transport needs.</p>
           <strong>Vehicle options</strong>
           <p>3.5t sleeper-cabin vans, part loads, full loads and other vehicle searches depending on the shipment.</p>
           <strong>New client benefit</strong>
@@ -117,6 +125,8 @@
       </section>
       <section class="service-content-page">
         <form class="contact-form quote-form" action="mailto:dispo@wolfexpress.rs" method="post" enctype="text/plain">
+          <h2 class="quote-wide">Send load details</h2>
+          <p class="quote-wide quote-helper">Fill in what you know. If something is not clear yet, leave it empty and we will help you check the right vehicle and realistic price.</p>
           <label>
             Company name
             <input type="text" name="Company" autocomplete="organization" required>
@@ -131,21 +141,39 @@
           </label>
           <label>
             Loading place
-            <input type="text" name="Loading place" placeholder="Example: Madrid, Spain" required>
+            <input type="text" name="Loading place" placeholder="Company, city, postcode, country" required>
           </label>
           <label>
             Unloading place
-            <input type="text" name="Unloading place" placeholder="Example: Munich, Germany" required>
+            <input type="text" name="Unloading place" placeholder="Company, city, postcode, country" required>
           </label>
           <label>
             Loading date
             <input type="text" name="Loading date" placeholder="Example: 24 May 2026">
           </label>
           <label>
+            Loading time
+            <input type="text" name="Loading time" placeholder="Example: 08:00-12:00">
+          </label>
+          <label>
+            Delivery deadline
+            <input type="text" name="Delivery deadline" placeholder="Example: next day, before 16:00">
+          </label>
+          <label>
             Target price / budget
             <input type="text" name="Target price" placeholder="Example: 650 EUR">
           </label>
-          <label class="quote-wide">
+          <label>
+            Urgency
+            <select name="Urgency">
+              <option value="">Select urgency</option>
+              <option>Today / urgent</option>
+              <option>Tomorrow</option>
+              <option>This week</option>
+              <option>Flexible date</option>
+            </select>
+          </label>
+          <label>
             Vehicle needed
             <select name="Vehicle needed">
               <option value="">Select vehicle need</option>
@@ -156,9 +184,56 @@
               <option>Not sure - please advise</option>
             </select>
           </label>
+          <label>
+            Cargo type
+            <input type="text" name="Cargo type" placeholder="Example: pallets, machinery, boxes">
+          </label>
+          <label>
+            Total weight
+            <input type="text" name="Total weight" placeholder="Example: 850 kg">
+          </label>
+          <label>
+            Pallets / pieces
+            <input type="text" name="Pallets or pieces" placeholder="Example: 4 EUR pallets">
+          </label>
+          <label>
+            Cargo dimensions
+            <input type="text" name="Cargo dimensions" placeholder="Example: 120 x 80 x 160 cm each">
+          </label>
+          <label>
+            Loading method
+            <select name="Loading method">
+              <option value="">Select loading method</option>
+              <option>Forklift loading</option>
+              <option>Pallet jack needed</option>
+              <option>Tail lift needed</option>
+              <option>Roof loading needed</option>
+              <option>Manual loading</option>
+              <option>Not sure - please advise</option>
+            </select>
+          </label>
+          <fieldset class="quote-wide quote-options">
+            <legend>Documents / support needed</legend>
+            <label>
+              <input type="checkbox" name="Documents needed" value="CMR">
+              CMR
+            </label>
+            <label>
+              <input type="checkbox" name="Documents needed" value="POD">
+              POD / delivery confirmation
+            </label>
+            <label>
+              <input type="checkbox" name="Documents needed" value="Import export support">
+              Import / export documentation support
+            </label>
+            <label>
+              <input type="checkbox" name="Documents needed" value="24/7 dispatch updates">
+              24/7 dispatch updates
+            </label>
+          </fieldset>
           <label class="quote-wide">
             Cargo and transport details
-            <textarea name="Shipment details" rows="6" placeholder="Cargo type, dimensions, weight, pallets, delivery deadline, loading method, CMR/POD/import/export documents, and any special requests"></textarea>
+            <textarea name="Shipment details" rows="6" placeholder="Add anything important: cargo value, ADR/non-ADR, customs notes, exact loading contact, special requirements, preferred communication, or additional instructions"></textarea>
           </label>
           <button class="button primary full quote-wide" type="submit">Send transportation offer</button>
         </form>
@@ -166,7 +241,7 @@
           <h2>How we handle your request</h2>
           <p>When your company has goods ready to move, we help check realistic transport options, vehicle availability and pricing direction before confirming the next step with you.</p>
           <ul>
-            <li>You send loading place, unloading place, date and cargo details.</li>
+            <li>You send route, date, cargo size, weight and loading requirements.</li>
             <li>You tell us the target price or budget you prefer.</li>
             <li>We check suitable vans or other vehicle options for the route.</li>
             <li>We coordinate timing, documentation and communication with the client.</li>
@@ -176,6 +251,27 @@
         <article class="service-content-card quote-wide">
           <h2>Transport requests we can check</h2>
           <p>Sailaway Logistics can support urgent EU van freight, regular part loads, full loads, dispatch coordination and documentation follow-up for companies shipping goods across Europe. Main focus routes include Spain, Germany, Netherlands, Belgium, France, Serbia, Croatia and Hungary.</p>
+        </article>
+        <article class="service-content-card quote-wide quote-trust-card">
+          <h2>Why send your transport request to Sailaway Logistics?</h2>
+          <div class="quote-trust-grid">
+            <div>
+              <strong>Platform experience</strong>
+              <span>Active work through Trans.eu and TIMOCOM for freight search, communication and vehicle coordination.</span>
+            </div>
+            <div>
+              <strong>Clear load information</strong>
+              <span>We collect route, cargo, dimensions, weight, date, target price and document needs before checking options.</span>
+            </div>
+            <div>
+              <strong>EU and Balkan focus</strong>
+              <span>Spain, Germany, Netherlands, Belgium, France, Serbia, Croatia, Hungary and wider European routes.</span>
+            </div>
+            <div>
+              <strong>Documents and updates</strong>
+              <span>CMR, POD, import/export support and 24/7 dispatch communication can stay in one organized flow.</span>
+            </div>
+          </div>
         </article>
       </section>
     </main>
