@@ -444,46 +444,49 @@ h3 {
 .seo-link-section {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 22px clamp(18px, 4vw, 42px) 72px;
+  padding: 8px clamp(18px, 4vw, 42px) 54px;
 }
 
 .seo-link-section .section-heading {
   display: grid;
-  grid-template-columns: minmax(280px, 0.72fr) 1fr;
-  gap: 24px;
-  align-items: end;
+  grid-template-columns: 240px 1fr;
+  gap: 18px;
+  align-items: center;
   max-width: none;
-  margin-bottom: 24px;
-  padding-bottom: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--line);
 }
 
 .seo-link-section .section-heading h2 {
-  max-width: 520px;
-  font-size: clamp(28px, 3vw, 40px);
+  max-width: none;
+  margin-bottom: 0;
+  font-size: clamp(24px, 2.3vw, 30px);
+  line-height: 1.08;
 }
 
 .seo-link-section .section-heading p:not(.eyebrow) {
-  max-width: 620px;
-  margin-bottom: 16px;
-  font-size: 16px;
+  max-width: 520px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .seo-link-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 
 .seo-link-grid a {
   display: grid;
-  gap: 8px;
-  min-height: 124px;
-  padding: 16px;
+  gap: 5px;
+  min-height: 82px;
+  padding: 12px 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0 8px 20px rgba(6, 25, 47, 0.04);
+  box-shadow: 0 6px 16px rgba(6, 25, 47, 0.035);
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
@@ -495,18 +498,18 @@ h3 {
 
 .seo-link-grid strong {
   color: var(--navy);
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.18;
 }
 
 .seo-link-grid span {
   color: var(--muted);
-  font-size: 14px;
-  line-height: 1.45;
+  font-size: 12px;
+  line-height: 1.35;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
 }
 
 .service-page {
@@ -1758,7 +1761,6 @@ select:focus {
   }
 
   .section,
-  .seo-link-section,
   .freight-match-section,
   .fleet-section,
   .reputation-section,
@@ -1767,6 +1769,10 @@ select:focus {
   .map-section,
   .contact-section {
     padding: 58px 18px;
+  }
+
+  .seo-link-section {
+    padding: 34px 18px;
   }
 
   .rating-card-header,
