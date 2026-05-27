@@ -712,12 +712,24 @@
             <input type="email" name="Email" autocomplete="email" required>
           </label>
           <label>
-            <span data-i18n="form.route">Loading and unloading route</span>
-            <input type="text" name="Route" placeholder="Example: Madrid, ES to Munich, DE" data-i18n-placeholder="form.routePlaceholder" required>
+            <span data-i18n="form.loadingPlace">Loading place</span>
+            <input type="text" name="Loading place" placeholder="Example: Madrid, ES" data-i18n-placeholder="form.loadingPlaceholder" required>
+          </label>
+          <label>
+            <span data-i18n="form.unloadingPlace">Unloading place</span>
+            <input type="text" name="Unloading place" placeholder="Example: Munich, DE" data-i18n-placeholder="form.unloadingPlaceholder" required>
+          </label>
+          <label>
+            <span data-i18n="form.loadingDate">Loading date</span>
+            <input type="text" name="Loading date" placeholder="Example: 28 May 2026" data-i18n-placeholder="form.loadingDatePlaceholder">
+          </label>
+          <label>
+            <span data-i18n="form.targetPrice">Target price / budget</span>
+            <input type="text" name="Target price" placeholder="Example: preferred price range" data-i18n-placeholder="form.targetPricePlaceholder">
           </label>
           <label>
             <span data-i18n="form.details">Shipment details</span>
-            <textarea name="Shipment details" rows="5" placeholder="Cargo, weight, loading date, part load or full load, import/export documents" data-i18n-placeholder="form.detailsPlaceholder"></textarea>
+            <textarea name="Shipment details" rows="5" placeholder="Cargo, weight, dimensions, part load or full load, import/export documents" data-i18n-placeholder="form.detailsPlaceholder"></textarea>
           </label>
           <button class="button primary full" type="submit" data-i18n="form.submit">Send request</button>
         </form>
@@ -750,6 +762,7 @@
               <span>Germany</span>
               <span>Netherlands</span>
               <span>Belgium</span>
+              <span>France</span>
               <span>Serbia</span>
               <span>Croatia</span>
               <span>Hungary</span>
@@ -761,8 +774,12 @@
               <input type="text" name="Company or contact" required>
             </label>
             <label>
-              Route
-              <input type="text" name="Route" placeholder="Example: Valencia, ES to Hamburg, DE" required>
+              Loading place
+              <input type="text" name="Loading place" placeholder="Example: Valencia, ES" required>
+            </label>
+            <label>
+              Unloading place
+              <input type="text" name="Unloading place" placeholder="Example: Hamburg, DE" required>
             </label>
             <label>
               Loading date
