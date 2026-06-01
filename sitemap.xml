@@ -79,6 +79,12 @@
     <priority>0.89</priority>
   </url>
   <url>
+    <loc>https://sailawaylogistics.github.io/eu-transport-request-checklist.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.89</priority>
+  </url>
+  <url>
     <loc>https://sailawaylogistics.github.io/full-load-transport-europe.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -157,6 +163,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://sailawaylogistics.github.io/urgent-van-transport-europe.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.87</priority>
+  </url>
+  <url>
     <loc>https://sailawaylogistics.github.io/dispatch-services-van-companies.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -197,5 +209,17 @@
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://sailawaylogistics.github.io/non-eu-eu-freight-support.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
+    <loc>https://sailawaylogistics.github.io/dkw-fuel-card-transport-support.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
   </url>
 </urlset>
