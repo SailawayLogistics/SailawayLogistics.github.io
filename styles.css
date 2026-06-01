@@ -442,33 +442,31 @@ h3 {
 }
 
 .seo-link-section {
-  max-width: 1160px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 8px clamp(18px, 4vw, 42px) 54px;
+  padding: 28px clamp(18px, 4vw, 42px) 54px;
 }
 
 .seo-link-section .section-heading {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 18px;
-  align-items: center;
-  max-width: none;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
+  display: block;
+  max-width: 720px;
+  margin: 0 auto 22px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--line);
+  text-align: center;
 }
 
 .seo-link-section .section-heading h2 {
   max-width: none;
-  margin-bottom: 0;
-  font-size: clamp(24px, 2.3vw, 30px);
+  margin-bottom: 8px;
+  font-size: clamp(26px, 3vw, 38px);
   line-height: 1.08;
 }
 
 .seo-link-section .section-heading p:not(.eyebrow) {
-  max-width: 520px;
-  margin-bottom: 0;
-  font-size: 14px;
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 15px;
   line-height: 1.45;
 }
 
