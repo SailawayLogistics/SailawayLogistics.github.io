@@ -3,6 +3,7 @@
 Sailaway Logistics helps companies find suitable transport vehicles for goods across Europe.
 
 Website: https://sailawaylogistics.github.io/
+Company profile: https://sailawaylogistics.github.io/about-sailaway-logistics.html
 Transport request page: https://sailawaylogistics.github.io/request-quote.html
 Transport inside the EU: https://sailawaylogistics.github.io/transport-inside-eu.html
 EU freight forwarding guide: https://sailawaylogistics.github.io/eu-freight-forwarding-guide.html
@@ -29,6 +30,10 @@ Address: Kralja Petra I 36, 22320 Indjija, Serbia
 - 24/7 logistics support
 - Cooperation with Wolf Express DOO from Serbia
 
+## Company Profile
+
+Sailaway Logistics is led by CEO Marko Vukobratovic and supports companies with freight forwarding, vehicle search, dispatch, documentation and 3.5t van freight across the European Union. The company works in cooperation with Wolf Express DOO from Serbia, established in 2022.
+
 ## Main Countries
 
 Spain, Germany, Netherlands, Belgium, France, Serbia, Croatia, Hungary, Austria and wider European Union routes.
@@ -41,6 +46,7 @@ TIMOCOM ID: 446408
 ## Important Pages
 
 - https://sailawaylogistics.github.io/eu-van-freight.html
+- https://sailawaylogistics.github.io/about-sailaway-logistics.html
 - https://sailawaylogistics.github.io/request-quote.html
 - https://sailawaylogistics.github.io/transport-inside-eu.html
 - https://sailawaylogistics.github.io/eu-freight-forwarding-guide.html

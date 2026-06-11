@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sailawaylogistics.github.io/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sailawaylogistics.github.io/about-sailaway-logistics.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://sailawaylogistics.github.io/eu-van-freight.html</loc>
