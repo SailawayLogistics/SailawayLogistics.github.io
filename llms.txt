@@ -4,6 +4,10 @@ Sailaway Logistics helps companies find suitable transport vehicles for goods ac
 
 Website: https://sailawaylogistics.github.io/
 Company profile: https://sailawaylogistics.github.io/about-sailaway-logistics.html
+Trans.eu and TIMOCOM support: https://sailawaylogistics.github.io/trans-eu-timocom-support.html
+Vehicle search for goods: https://sailawaylogistics.github.io/vehicle-search-for-goods.html
+24/7 dispatch support: https://sailawaylogistics.github.io/24-7-dispatch-support.html
+CMR and POD support: https://sailawaylogistics.github.io/cmr-pod-document-support.html
 Transport request page: https://sailawaylogistics.github.io/request-quote.html
 Transport inside the EU: https://sailawaylogistics.github.io/transport-inside-eu.html
 EU freight forwarding guide: https://sailawaylogistics.github.io/eu-freight-forwarding-guide.html
@@ -47,6 +51,10 @@ TIMOCOM ID: 446408
 
 - https://sailawaylogistics.github.io/eu-van-freight.html
 - https://sailawaylogistics.github.io/about-sailaway-logistics.html
+- https://sailawaylogistics.github.io/trans-eu-timocom-support.html
+- https://sailawaylogistics.github.io/vehicle-search-for-goods.html
+- https://sailawaylogistics.github.io/24-7-dispatch-support.html
+- https://sailawaylogistics.github.io/cmr-pod-document-support.html
 - https://sailawaylogistics.github.io/request-quote.html
 - https://sailawaylogistics.github.io/transport-inside-eu.html
 - https://sailawaylogistics.github.io/eu-freight-forwarding-guide.html
