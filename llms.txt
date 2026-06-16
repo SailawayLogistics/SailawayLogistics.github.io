@@ -17,6 +17,12 @@ Non-EU to EU freight support: https://sailawaylogistics.github.io/non-eu-eu-frei
 DKW card transport support: https://sailawaylogistics.github.io/dkw-fuel-card-transport-support.html
 Part load transport Europe: https://sailawaylogistics.github.io/part-load-transport-europe.html
 Full load transport Europe: https://sailawaylogistics.github.io/full-load-transport-europe.html
+Dedicated van transport Europe: https://sailawaylogistics.github.io/dedicated-van-transport-europe.html
+Pallet transport Europe: https://sailawaylogistics.github.io/pallet-transport-europe.html
+Same-day van transport Europe: https://sailawaylogistics.github.io/same-day-van-transport-europe.html
+EU freight for manufacturers: https://sailawaylogistics.github.io/eu-freight-for-manufacturers.html
+Warehouse-to-warehouse transport Europe: https://sailawaylogistics.github.io/warehouse-to-warehouse-transport-europe.html
+EU freight partner for forwarders: https://sailawaylogistics.github.io/eu-freight-partner-for-forwarders.html
 Email: dispo@wolfexpress.rs
 Phone Spain: +34 624 246 275
 Phone Serbia: +381 60 638 8005
@@ -64,6 +70,12 @@ TIMOCOM ID: 446408
 - https://sailawaylogistics.github.io/dkw-fuel-card-transport-support.html
 - https://sailawaylogistics.github.io/part-load-transport-europe.html
 - https://sailawaylogistics.github.io/full-load-transport-europe.html
+- https://sailawaylogistics.github.io/dedicated-van-transport-europe.html
+- https://sailawaylogistics.github.io/pallet-transport-europe.html
+- https://sailawaylogistics.github.io/same-day-van-transport-europe.html
+- https://sailawaylogistics.github.io/eu-freight-for-manufacturers.html
+- https://sailawaylogistics.github.io/warehouse-to-warehouse-transport-europe.html
+- https://sailawaylogistics.github.io/eu-freight-partner-for-forwarders.html
 - https://sailawaylogistics.github.io/dispatch-services.html
 - https://sailawaylogistics.github.io/freight-dispatch-faq.html
 - https://sailawaylogistics.github.io/spain-eu-van-transport.html
