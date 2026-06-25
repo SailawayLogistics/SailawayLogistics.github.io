@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sailawaylogistics.github.io/sitemap.xml
+Sitemap: https://sailawaylogistics.github.io/sitemap-core.xml
 Sitemap: https://sailawaylogistics.github.io/sitemap.txt
 
 Host: sailawaylogistics.github.io
