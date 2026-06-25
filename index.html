@@ -188,6 +188,160 @@
         ]
       }
     </script>
+    <style>
+      .serbia-campaign-shell {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 22px;
+        align-items: start;
+      }
+
+      .serbia-campaign-copy {
+        padding: 32px;
+        border: 1px solid rgba(121, 168, 75, 0.22);
+        border-radius: 20px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(243, 250, 247, 0.98));
+        box-shadow: 0 14px 36px rgba(6, 25, 47, 0.08);
+      }
+
+      .serbia-campaign-kicker {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border-radius: 999px;
+        background: rgba(121, 168, 75, 0.12);
+        border: 1px solid rgba(121, 168, 75, 0.24);
+        color: #79a84b;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .serbia-campaign-copy h2 {
+        margin: 18px 0 16px;
+        color: #79a84b;
+        font-size: clamp(32px, 4vw, 58px);
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .serbia-campaign-copy p,
+      .serbia-campaign-proof span,
+      .serbia-campaign-points p {
+        color: #79a84b;
+        line-height: 1.65;
+      }
+
+      .serbia-campaign-lead {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .serbia-campaign-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 24px 0;
+      }
+
+      .serbia-campaign-badges span {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: 0 14px;
+        border-radius: 999px;
+        background: rgba(121, 168, 75, 0.12);
+        border: 1px solid rgba(121, 168, 75, 0.22);
+        color: #79a84b;
+        font-weight: 700;
+      }
+
+      .serbia-campaign-points {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin: 0 0 24px;
+      }
+
+      .serbia-campaign-points article {
+        padding: 18px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(121, 168, 75, 0.16), rgba(121, 168, 75, 0.06));
+        border: 1px solid rgba(121, 168, 75, 0.22);
+      }
+
+      .serbia-campaign-points strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #0b8c86;
+      }
+
+      .serbia-campaign-visual {
+        margin: 0;
+        overflow: hidden;
+        padding: 16px;
+        border: 1px solid rgba(8, 38, 70, 0.14);
+        border-radius: 20px;
+        background: #0a0f16;
+        box-shadow: 0 18px 44px rgba(6, 25, 47, 0.14);
+      }
+
+      .serbia-campaign-visual img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+      }
+
+      .serbia-campaign-proof {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 22px;
+        padding: 24px;
+        border: 1px solid rgba(121, 168, 75, 0.18);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 14px 36px rgba(6, 25, 47, 0.08);
+      }
+
+      .serbia-campaign-proof strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #79a84b;
+        font-size: 28px;
+        line-height: 1;
+      }
+
+      .amazon-word {
+        color: #ff9900;
+      }
+
+      .ebay-word .e {
+        color: #e53238;
+      }
+
+      .ebay-word .b {
+        color: #0064d2;
+      }
+
+      .ebay-word .a {
+        color: #f5af02;
+      }
+
+      .ebay-word .y {
+        color: #86b817;
+      }
+
+      @media (max-width: 980px) {
+        .serbia-campaign-shell,
+        .serbia-campaign-proof,
+        .serbia-campaign-points {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header" data-header>
@@ -379,30 +533,48 @@
       </section>
 
       <section class="serbia-campaign-section" aria-label="Nova usluga za tržište Srbije">
-        <div class="section-heading">
-          <p class="eyebrow">Novo za Srbiju</p>
-          <h2>Velika novost za kupce u Srbiji: poručivanje sa Amazona uz dostavu preko Sailaway Logistics.</h2>
-          <p>Sailaway Logistics širi ponudu za tržište Srbije kroz novu uslugu namenjenu kupcima koji žele da poručuju proizvode sa Amazona i drugih online platformi, čak i kada prodavac nema direktnu dostavu za Srbiju.</p>
-        </div>
-        <div class="serbia-campaign-grid">
+        <div class="serbia-campaign-shell">
           <div class="serbia-campaign-copy">
-            <span class="news-label">Nova kampanja</span>
-            <h3>Sada kupci mogu lakše da poručuju sa Amazona, a mi organizujemo put paketa do Srbije</h3>
-            <p>Ako prodavac ne isporučuje direktno za Srbiju, kupac može da koristi adresu za prijem u Austriji ili Nemačkoj, a Sailaway Logistics zatim preuzima paket, organizuje transport i dostavu prema Srbiji kroz jasan i pouzdan proces.</p>
-            <ul class="campaign-points">
-              <li>mogućnost poručivanja robe i kada nema direktne dostave za Srbiju</li>
-              <li>prijem pošiljke na adresi u Austriji ili Nemačkoj</li>
-              <li>organizovan transport i dostava paketa prema Srbiji</li>
-              <li>jednostavnije, sigurnije i preglednije iskustvo za krajnjeg kupca</li>
-            </ul>
+            <span class="serbia-campaign-kicker">Udarna novina za Srbiju</span>
+            <h2>Kupujete na <span class="amazon-word">Amazonu</span> i <span class="ebay-word"><span class="e">e</span><span class="b">B</span><span class="a">a</span><span class="y">y</span>-u</span>? Više ne čekate mesecima.</h2>
+            <p class="serbia-campaign-lead">Sailaway Logistics i Wolf Express pokreću novu uslugu za kupce iz Srbije: poručite robu online, pošaljite je na naše adrese u <strong>Nemačkoj</strong> ili <strong>Austriji</strong>, a mi je organizovano dovozimo u Srbiju <strong>tri puta mesečno</strong>.</p>
+            <div class="serbia-campaign-badges">
+              <span>3 isporuke mesečno za Srbiju</span>
+              <span>Adrese za prijem u Austriji i Nemačkoj</span>
+              <span>Amazon, eBay i ostali online shopping</span>
+            </div>
+            <div class="serbia-campaign-points">
+              <article>
+                <strong>Bez čekanja po dva ili tri meseca</strong>
+                <p>Kupac više ne mora da odustane od porudžbine ili da čeka beskonačno kada prodavac nema direktnu dostavu za Srbiju.</p>
+              </article>
+              <article>
+                <strong>Jasan i jednostavan proces</strong>
+                <p>Roba stiže na našu adresu, mi preuzimamo, grupišemo i redovno dovozimo za Srbiju kroz pregledan model koji ljudi odmah razumeju.</p>
+              </article>
+            </div>
             <div class="hero-actions">
-              <a class="button primary" href="request-quote.html">Pošaljite upit za poručivanje</a>
+              <a class="button primary" href="request-quote.html">Pošaljite upit za online kupovinu</a>
               <a class="button secondary" href="mailto:dispo@wolfexpress.rs">Saznajte kako funkcioniše</a>
             </div>
           </div>
           <figure class="serbia-campaign-visual">
-            <img src="assets/sailaway-serbia-market-campaign.png" alt="Sailaway Logistics promotivna kampanja za tržište Srbije">
+            <img src="assets/serbia-amazon-ebay-launch.png" alt="Kupovina sa Amazona i eBaya uz dostavu za Srbiju preko Sailaway Logistics i Wolf Express">
           </figure>
+        </div>
+        <div class="serbia-campaign-proof">
+          <div>
+            <strong>3x mesečno</strong>
+            <span>redovan dovoz pošiljki iz Nemačke i Austrije ka Srbiji</span>
+          </div>
+          <div>
+            <strong>2 adrese</strong>
+            <span>za prijem robe kada prodavac ne šalje direktno za Srbiju</span>
+          </div>
+          <div>
+            <strong>Brže rešenje</strong>
+            <span>za kupce koji žele pregledniji i sigurniji put paketa</span>
+          </div>
         </div>
       </section>
 
