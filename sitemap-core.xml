@@ -144,4 +144,28 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://sailawaylogistics.github.io/medjunarodni-transport-srbija.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.94</priority>
+  </url>
+  <url>
+    <loc>https://sailawaylogistics.github.io/medjunarodni-prevoz-robe-srbija-eu.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.93</priority>
+  </url>
+  <url>
+    <loc>https://sailawaylogistics.github.io/eu-transport-iz-srbije.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://sailawaylogistics.github.io/izvoz-robe-srbija-eu.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+  </url>
 </urlset>
