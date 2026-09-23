@@ -1046,6 +1046,17 @@ h3 {
   line-height: 1.65;
 }
 
+.service-hero-page .button.secondary {
+  color: var(--navy);
+  border-color: var(--line);
+  background: #fff;
+}
+
+.service-hero-page .button.secondary:hover {
+  color: var(--teal);
+  border-color: rgba(11, 140, 134, 0.45);
+}
+
 .service-hero-card {
   display: grid;
   gap: 14px;
