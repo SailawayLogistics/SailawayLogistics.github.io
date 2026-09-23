@@ -1226,6 +1226,30 @@ h3 {
   padding: 0;
 }
 
+.quote-details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.quote-details summary {
+  padding: 15px 16px;
+  color: var(--navy);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.quote-details[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.quote-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
 .quote-trust-card {
   background: linear-gradient(135deg, #fff, #f5faf9);
 }
@@ -2426,6 +2450,10 @@ select:focus {
   }
 
   .quote-options {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-details-grid {
     grid-template-columns: 1fr;
   }
 

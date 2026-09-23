@@ -129,7 +129,7 @@
       <section class="service-content-page">
         <form class="contact-form quote-form" data-whatsapp-form>
           <h2 class="quote-wide">Enviar detalles de la carga</h2>
-          <p class="quote-wide quote-helper">Complete lo que sepa. Si algo no está claro todavía, puede dejarlo vacío y le ayudaremos a revisar el vehículo adecuado y un precio realista.</p>
+          <p class="quote-wide quote-helper">Solo necesitamos los datos básicos para empezar. Puede añadir información técnica si ya la tiene.</p>
           <label>
             Nombre de la empresa
             <input type="text" name="Empresa" autocomplete="organization" required>
@@ -155,43 +155,6 @@
             <input type="text" name="Fecha de carga" placeholder="Ejemplo: 24 mayo 2026">
           </label>
           <label>
-            Hora de carga
-            <input type="text" name="Hora de carga" placeholder="Ejemplo: 08:00-12:00">
-          </label>
-          <label>
-            Fecha de descarga
-            <input type="text" name="Fecha de descarga" placeholder="Ejemplo: 25 mayo 2026">
-          </label>
-          <label>
-            Plazo de entrega
-            <input type="text" name="Plazo de entrega" placeholder="Ejemplo: día siguiente, antes de 16:00">
-          </label>
-          <label>
-            Precio objetivo / presupuesto
-            <input type="text" name="Precio objetivo" placeholder="Ejemplo: 650 EUR">
-          </label>
-          <label>
-            Urgencia
-            <select name="Urgencia">
-              <option value="">Seleccionar urgencia</option>
-              <option>Hoy / urgente</option>
-              <option>Mañana</option>
-              <option>Esta semana</option>
-              <option>Fecha flexible</option>
-            </select>
-          </label>
-          <label>
-            Vehículo necesario
-            <select name="Vehículo necesario">
-              <option value="">Seleccionar vehículo</option>
-              <option>Furgoneta 3,5t</option>
-              <option>Capacidad parcial en furgoneta</option>
-              <option>Carga completa / furgoneta dedicada</option>
-              <option>Otro tipo de vehículo</option>
-              <option>No estoy seguro - necesito orientación</option>
-            </select>
-          </label>
-          <label>
             Tipo de mercancía
             <input type="text" name="Tipo de mercancía" placeholder="Ejemplo: palets, maquinaria, cajas">
           </label>
@@ -199,45 +162,24 @@
             Peso total
             <input type="text" name="Peso total" placeholder="Ejemplo: 850 kg">
           </label>
-          <label>
-            Palets / piezas
-            <input type="text" name="Palets o piezas" placeholder="Ejemplo: 4 europalets">
-          </label>
-          <label>
-            Dimensiones de la mercancía
-            <input type="text" name="Dimensiones de mercancía" placeholder="Ejemplo: 120 x 80 x 160 cm cada uno">
-          </label>
-          <label>
-            Método de carga
-            <select name="Método de carga">
-              <option value="">Seleccionar método de carga</option>
-              <option>Carga con carretilla</option>
-              <option>Transpaleta necesaria</option>
-              <option>Plataforma elevadora necesaria</option>
-              <option>Carga por techo necesaria</option>
-              <option>Carga manual</option>
-              <option>No estoy seguro - necesito orientación</option>
-            </select>
-          </label>
-          <fieldset class="quote-wide quote-options">
-            <legend>Documentos / soporte necesario</legend>
-            <label>
-              <input type="checkbox" name="Documentos necesarios" value="CMR">
-              CMR
-            </label>
-            <label>
-              <input type="checkbox" name="Documentos necesarios" value="POD">
-              POD / confirmación de entrega
-            </label>
-            <label>
-              <input type="checkbox" name="Documentos necesarios" value="Soporte import export">
-              Soporte documental import / export
-            </label>
-            <label>
-              <input type="checkbox" name="Documentos necesarios" value="Actualizaciones dispatch 24/7">
-              Actualizaciones dispatch 24/7
-            </label>
-          </fieldset>
+          <details class="quote-wide quote-details">
+            <summary>Añadir detalles opcionales</summary>
+            <div class="quote-details-grid">
+              <label>Hora de carga<input type="text" name="Hora de carga" placeholder="Ejemplo: 08:00-12:00"></label>
+              <label>Fecha de descarga<input type="text" name="Fecha de descarga" placeholder="Ejemplo: 25 mayo 2026"></label>
+              <label>Precio objetivo / presupuesto<input type="text" name="Precio objetivo" placeholder="Ejemplo: 650 EUR"></label>
+              <label>Palets / piezas<input type="text" name="Palets o piezas" placeholder="Ejemplo: 4 europalets"></label>
+              <label>Dimensiones<input type="text" name="Dimensiones de mercancía" placeholder="Ejemplo: 120 x 80 x 160 cm"></label>
+              <label>Vehículo necesario<select name="Vehículo necesario"><option value="">No estoy seguro</option><option>Furgoneta 3,5t</option><option>Carga parcial</option><option>Carga completa</option><option>Otro tipo de vehículo</option></select></label>
+              <fieldset class="quote-wide quote-options">
+                <legend>Documentos / soporte</legend>
+                <label><input type="checkbox" name="Documentos necesarios" value="CMR">CMR</label>
+                <label><input type="checkbox" name="Documentos necesarios" value="POD">POD / entrega</label>
+                <label><input type="checkbox" name="Documentos necesarios" value="Soporte import export">Import / export</label>
+                <label><input type="checkbox" name="Documentos necesarios" value="Actualizaciones dispatch 24/7">Dispatch 24/7</label>
+              </fieldset>
+            </div>
+          </details>
           <label class="quote-wide">
             Detalles de mercancía y transporte
             <textarea name="Detalles del envío" rows="6" placeholder="Añada cualquier dato importante: valor de la mercancía, ADR/no ADR, notas de aduana, contacto exacto de carga, requisitos especiales, comunicación preferida o instrucciones adicionales"></textarea>
@@ -283,6 +225,7 @@
       </section>
     </main>
     <a class="whatsapp-float-button" href="https://wa.me/34624246275?text=Hola%20Sailaway%20Logistics%2C%20quiero%20enviar%20detalles%20de%20mercanc%C3%ADa%20para%20transporte." target="_blank" rel="noopener" aria-label="Enviar detalles de mercancía por WhatsApp"><span>WhatsApp</span><strong>Enviar detalles</strong></a>
+    <script src="script.js"></script>
     <script src="analytics-events.js"></script>
   </body>
 </html>
