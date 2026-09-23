@@ -347,6 +347,20 @@ h3 {
   gap: 16px;
 }
 
+.client-overview-section,
+.news-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 22px clamp(18px, 4vw, 42px) 86px;
+}
+
+.client-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
 .service-card,
 .process-step {
   border: 1px solid var(--line);
@@ -365,6 +379,317 @@ h3 {
   color: var(--muted);
   line-height: 1.55;
   margin-bottom: 0;
+}
+
+.overview-card,
+.overview-summary,
+.news-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 28px rgba(6, 25, 47, 0.06);
+}
+
+.overview-card {
+  padding: 24px;
+  border-top: 4px solid var(--teal);
+}
+
+.overview-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--navy);
+  font-weight: 800;
+}
+
+.overview-card h3,
+.overview-summary h3,
+.news-card h3 {
+  margin-bottom: 12px;
+  color: var(--navy);
+  font-size: 22px;
+}
+
+.overview-card p,
+.overview-summary p:not(.eyebrow),
+.news-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.overview-summary {
+  padding: 26px;
+  background:
+    linear-gradient(145deg, rgba(8, 38, 70, 0.06), rgba(11, 140, 134, 0.14)),
+    rgba(255, 255, 255, 0.95);
+}
+
+.overview-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.overview-tags span,
+.news-label {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.overview-tags span {
+  padding: 8px 12px;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(8, 38, 70, 0.08);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 16px;
+}
+
+.news-card {
+  padding: 24px;
+}
+
+.news-label {
+  margin-bottom: 16px;
+  padding: 7px 11px;
+  color: var(--teal);
+  background: rgba(11, 140, 134, 0.1);
+}
+
+.featured-news {
+  background:
+    linear-gradient(150deg, rgba(8, 38, 70, 0.08), rgba(121, 168, 75, 0.12)),
+    rgba(255, 255, 255, 0.96);
+}
+
+.news-card a {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.news-card a:hover {
+  color: var(--teal);
+}
+
+.serbia-campaign-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 22px clamp(18px, 4vw, 42px) 86px;
+}
+
+.serbia-campaign-shell {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.serbia-campaign-copy {
+  padding: 32px;
+  border: 1px solid rgba(121, 168, 75, 0.22);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(243, 250, 247, 0.98));
+  box-shadow: 0 14px 36px rgba(6, 25, 47, 0.08);
+}
+
+.serbia-campaign-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(121, 168, 75, 0.12);
+  border: 1px solid rgba(121, 168, 75, 0.24);
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.serbia-campaign-copy h2 {
+  margin: 18px 0 16px;
+  color: var(--green);
+  font-size: clamp(32px, 4vw, 58px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.serbia-campaign-copy p,
+.serbia-campaign-proof span,
+.serbia-campaign-points p {
+  color: var(--green);
+  line-height: 1.65;
+}
+
+.serbia-campaign-lead {
+  margin: 0;
+  font-size: 20px;
+}
+
+.serbia-campaign-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.serbia-campaign-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(121, 168, 75, 0.12);
+  border: 1px solid rgba(121, 168, 75, 0.22);
+  color: var(--green);
+  font-weight: 700;
+}
+
+.serbia-campaign-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 0 0 24px;
+}
+
+.serbia-campaign-points article {
+  padding: 18px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(121, 168, 75, 0.16), rgba(121, 168, 75, 0.06));
+  border: 1px solid rgba(121, 168, 75, 0.22);
+}
+
+.serbia-campaign-points strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--teal);
+}
+
+.serbia-campaign-visual {
+  margin: 0;
+  overflow: hidden;
+  padding: 16px;
+  border: 1px solid rgba(8, 38, 70, 0.14);
+  border-radius: 8px;
+  background: #0a0f16;
+  box-shadow: 0 18px 44px rgba(6, 25, 47, 0.14);
+}
+
+.serbia-campaign-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.serbia-campaign-proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 22px;
+  padding: 24px;
+  border: 1px solid rgba(121, 168, 75, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 14px 36px rgba(6, 25, 47, 0.08);
+}
+
+.serbia-campaign-proof strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--green);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.amazon-word {
+  color: #ff9900;
+}
+
+.ebay-word .e {
+  color: #e53238;
+}
+
+.ebay-word .b {
+  color: #0064d2;
+}
+
+.ebay-word .a {
+  color: #f5af02;
+}
+
+.ebay-word .y {
+  color: #86b817;
+}
+
+.core-seo-hub {
+  background: rgba(247, 251, 252, 0.9);
+  box-shadow: 0 0 0 100vmax rgba(247, 251, 252, 0.9);
+  clip-path: inset(0 -100vmax);
+}
+
+.core-seo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.core-seo-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
+  padding: 24px;
+  border: 1px solid rgba(8, 38, 70, 0.12);
+  border-top: 4px solid var(--teal);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 14px 32px rgba(6, 25, 47, 0.08);
+}
+
+.core-seo-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+}
+
+.core-seo-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.core-seo-card a {
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.core-seo-card > a:last-child {
+  margin-top: auto;
+}
+
+.supporting-seo-section {
+  padding-top: 76px;
+}
+
+.supporting-seo-grid + .supporting-seo-grid {
+  margin-top: 18px;
 }
 
 .freight-match-section {
@@ -1795,8 +2120,14 @@ select:focus {
   .intro-grid,
   .services-grid,
   .seo-link-grid,
+  .core-seo-grid,
   .service-accordion,
   .quote-form,
+  .client-overview-grid,
+  .news-grid,
+  .serbia-campaign-shell,
+  .serbia-campaign-proof,
+  .serbia-campaign-points,
   .fleet-grid,
   .freight-match-panel,
   .reputation-grid,
@@ -1814,6 +2145,10 @@ select:focus {
   .service-hero-page,
   .service-content-page {
     grid-template-columns: 1fr;
+  }
+
+  .overview-summary {
+    order: -1;
   }
 
   .related-link-grid {
@@ -1906,8 +2241,14 @@ select:focus {
   .intro-grid,
   .services-grid,
   .seo-link-grid,
+  .core-seo-grid,
   .service-accordion,
   .quote-form,
+  .client-overview-grid,
+  .news-grid,
+  .serbia-campaign-shell,
+  .serbia-campaign-proof,
+  .serbia-campaign-points,
   .fleet-grid,
   .freight-match-panel,
   .reputation-grid,
@@ -1930,6 +2271,9 @@ select:focus {
   }
 
   .section,
+  .client-overview-section,
+  .news-section,
+  .serbia-campaign-section,
   .freight-match-section,
   .fleet-section,
   .reputation-section,
