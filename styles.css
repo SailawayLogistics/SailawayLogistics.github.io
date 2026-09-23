@@ -489,20 +489,20 @@ h3 {
   color: var(--teal);
 }
 
-.serbia-campaign-section {
+.spain-campaign-section {
   max-width: 1160px;
   margin: 0 auto;
   padding: 22px clamp(18px, 4vw, 42px) 86px;
 }
 
-.serbia-campaign-shell {
+.spain-campaign-shell {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 22px;
   align-items: start;
 }
 
-.serbia-campaign-copy {
+.spain-campaign-copy {
   padding: 32px;
   border: 1px solid rgba(121, 168, 75, 0.22);
   border-radius: 8px;
@@ -510,7 +510,7 @@ h3 {
   box-shadow: 0 14px 36px rgba(6, 25, 47, 0.08);
 }
 
-.serbia-campaign-kicker {
+.spain-campaign-kicker {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
@@ -524,7 +524,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.serbia-campaign-copy h2 {
+.spain-campaign-copy h2 {
   margin: 18px 0 16px;
   color: var(--green);
   font-size: clamp(32px, 4vw, 58px);
@@ -532,26 +532,26 @@ h3 {
   text-transform: uppercase;
 }
 
-.serbia-campaign-copy p,
-.serbia-campaign-proof span,
-.serbia-campaign-points p {
+.spain-campaign-copy p,
+.spain-campaign-proof span,
+.spain-campaign-points p {
   color: var(--green);
   line-height: 1.65;
 }
 
-.serbia-campaign-lead {
+.spain-campaign-lead {
   margin: 0;
   font-size: 20px;
 }
 
-.serbia-campaign-badges {
+.spain-campaign-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin: 24px 0;
 }
 
-.serbia-campaign-badges span {
+.spain-campaign-badges span {
   display: inline-flex;
   align-items: center;
   min-height: 42px;
@@ -563,27 +563,27 @@ h3 {
   font-weight: 700;
 }
 
-.serbia-campaign-points {
+.spain-campaign-points {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
   margin: 0 0 24px;
 }
 
-.serbia-campaign-points article {
+.spain-campaign-points article {
   padding: 18px;
   border-radius: 8px;
   background: linear-gradient(180deg, rgba(121, 168, 75, 0.16), rgba(121, 168, 75, 0.06));
   border: 1px solid rgba(121, 168, 75, 0.22);
 }
 
-.serbia-campaign-points strong {
+.spain-campaign-points strong {
   display: block;
   margin-bottom: 8px;
   color: var(--teal);
 }
 
-.serbia-campaign-visual {
+.spain-campaign-visual {
   margin: 0;
   overflow: hidden;
   padding: 16px;
@@ -593,14 +593,14 @@ h3 {
   box-shadow: 0 18px 44px rgba(6, 25, 47, 0.14);
 }
 
-.serbia-campaign-visual img {
+.spain-campaign-visual img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 6px;
 }
 
-.serbia-campaign-proof {
+.spain-campaign-proof {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -612,7 +612,7 @@ h3 {
   box-shadow: 0 14px 36px rgba(6, 25, 47, 0.08);
 }
 
-.serbia-campaign-proof strong {
+.spain-campaign-proof strong {
   display: block;
   margin-bottom: 8px;
   color: var(--green);
@@ -2125,9 +2125,9 @@ select:focus {
   .quote-form,
   .client-overview-grid,
   .news-grid,
-  .serbia-campaign-shell,
-  .serbia-campaign-proof,
-  .serbia-campaign-points,
+  .spain-campaign-shell,
+  .spain-campaign-proof,
+  .spain-campaign-points,
   .fleet-grid,
   .freight-match-panel,
   .reputation-grid,
@@ -2246,9 +2246,9 @@ select:focus {
   .quote-form,
   .client-overview-grid,
   .news-grid,
-  .serbia-campaign-shell,
-  .serbia-campaign-proof,
-  .serbia-campaign-points,
+  .spain-campaign-shell,
+  .spain-campaign-proof,
+  .spain-campaign-points,
   .fleet-grid,
   .freight-match-panel,
   .reputation-grid,
@@ -2273,7 +2273,7 @@ select:focus {
   .section,
   .client-overview-section,
   .news-section,
-  .serbia-campaign-section,
+  .spain-campaign-section,
   .freight-match-section,
   .fleet-section,
   .reputation-section,
