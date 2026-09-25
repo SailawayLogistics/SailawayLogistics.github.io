@@ -235,12 +235,15 @@ async function renderEuropeMap() {
 function initWhatsAppForms() {
   const forms = document.querySelectorAll("[data-whatsapp-form]");
   const whatsappNumber = "34624246275";
+  const isEnglish = document.documentElement.lang === "en";
 
   forms.forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
-      const lines = ["Hola Sailaway Logistics, quiero solicitar transporte."];
+      const lines = [isEnglish
+        ? "Hello Sailaway Logistics, I would like to request transport."
+        : "Hola Sailaway Logistics, quiero solicitar transporte."];
       const formData = new FormData(form);
 
       formData.forEach((value, key) => {
