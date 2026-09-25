@@ -68,6 +68,61 @@ const pages = [
     zones: "Puerto de Algeciras, Los Barrios, San Roque, La Línea, Tarifa y el corredor A-7 hacia Málaga y la red nacional.",
     routes: "Málaga, Sevilla, Madrid, Portugal, Francia, Alemania, Benelux, Italia y otros destinos europeos.",
     cargo: "Mercancía comercial e industrial, palets, conexiones portuarias y envíos urgentes por carretera."
+  },
+  {
+    slug: "transporte-alicante-europa",
+    eyebrow: "Alicante · Costa Blanca · corredor mediterráneo",
+    title: "Transporte desde Alicante hacia Europa",
+    description: "Transporte Alicante Europa para empresas: carga parcial, completa, urgente y furgoneta 3,5t desde Alicante, Elche y Costa Blanca.",
+    intro: "Coordinamos mercancía desde Alicante, Elche y la Costa Blanca hacia Francia, Alemania, Italia, Benelux y otros destinos europeos.",
+    area: "Alicante, Elche y Costa Blanca",
+    zones: "Alicante, Elche Parque Empresarial, Torrellano, Alcoy, Elda, Villena, Benidorm y conexiones por la A-7 y AP-7.",
+    routes: "Francia, Alemania, Italia, Benelux y conexiones con Valencia, Murcia, Barcelona y Madrid.",
+    cargo: "Calzado, componentes, textiles, palets, mercancía comercial y envíos urgentes o planificados."
+  },
+  {
+    slug: "transporte-granada-europa",
+    eyebrow: "Granada · Andalucía oriental",
+    title: "Transporte desde Granada hacia Europa",
+    description: "Transporte Granada Europa para empresas: cargas parciales, completas, urgentes y furgoneta 3,5t con seguimiento CMR/POD.",
+    intro: "Organizamos transporte desde Granada y Andalucía oriental hacia los principales corredores nacionales y europeos.",
+    area: "Granada y Andalucía oriental",
+    zones: "Granada, Santa Fe, Atarfe, Peligros, Loja, Motril y conexiones A-44, A-92 y A-7.",
+    routes: "Francia, Alemania, Italia, Portugal, Benelux y conexiones con Málaga, Almería, Sevilla y Madrid.",
+    cargo: "Palets, suministros, alimentación no refrigerada, materiales, recambios y mercancía industrial o comercial."
+  },
+  {
+    slug: "transporte-cordoba-europa",
+    eyebrow: "Córdoba · centro de Andalucía",
+    title: "Transporte desde Córdoba hacia Europa",
+    description: "Transporte Córdoba Europa para empresas: carga parcial, completa, urgente y furgoneta 3,5t desde Córdoba y provincia.",
+    intro: "Coordinamos cargas desde Córdoba y sus áreas empresariales hacia España, Portugal, Francia y el resto de Europa.",
+    area: "Córdoba y provincia",
+    zones: "Córdoba, La Torrecilla, Las Quemadas, Lucena, Montilla, Puente Genil y conexiones A-4 y A-45.",
+    routes: "Portugal, Francia, Alemania, Italia, Benelux y conexiones con Sevilla, Málaga, Madrid y Algeciras.",
+    cargo: "Mercancía industrial, mobiliario, componentes, palets, suministros y cargas urgentes o planificadas."
+  },
+  {
+    slug: "transporte-cadiz-europa",
+    eyebrow: "Cádiz · Jerez · Bahía de Cádiz",
+    title: "Transporte desde Cádiz y Jerez hacia Europa",
+    description: "Transporte Cádiz Europa desde Jerez, Bahía de Cádiz y provincia: cargas parciales, completas, urgentes y furgoneta 3,5t.",
+    intro: "Ayudamos a empresas de Cádiz, Jerez y la Bahía a coordinar mercancía hacia España y destinos europeos por carretera.",
+    area: "Cádiz, Jerez y Bahía de Cádiz",
+    zones: "Cádiz, Jerez de la Frontera, El Puerto de Santa María, Puerto Real, San Fernando, Chiclana y corredor A-4/AP-4.",
+    routes: "Portugal, Francia, Alemania, Italia, Benelux y conexiones con Sevilla, Málaga, Algeciras y Madrid.",
+    cargo: "Mercancía comercial, suministros, componentes, palets, conexiones portuarias y envíos urgentes."
+  },
+  {
+    slug: "transporte-almeria-europa",
+    eyebrow: "Almería · poniente almeriense",
+    title: "Transporte desde Almería hacia Europa",
+    description: "Transporte Almería Europa para empresas: carga parcial, completa, urgente y furgoneta 3,5t desde Almería y El Ejido.",
+    intro: "Coordinamos transporte desde Almería y el poniente almeriense hacia España y los principales mercados europeos.",
+    area: "Almería y poniente almeriense",
+    zones: "Almería, El Ejido, Roquetas de Mar, Vícar, Níjar, Huércal de Almería y conexiones A-7 y A-92.",
+    routes: "Francia, Alemania, Benelux, Italia y conexiones con Murcia, Alicante, Granada, Málaga y Madrid.",
+    cargo: "Embalajes, suministros, palets, mercancía comercial y cargas industriales compatibles con transporte por carretera."
   }
 ];
 
