@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sailawaylogistics.github.io/sitemap.xml
-Sitemap: https://sailawaylogistics.github.io/sitemap-core.xml
+Sitemap: https://sailawaylogistics.eu/sitemap.xml
+Sitemap: https://sailawaylogistics.eu/sitemap-core.xml
