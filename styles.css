@@ -1472,6 +1472,7 @@ h3 {
 .reputation-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: start;
   gap: 16px;
 }
 
@@ -1632,6 +1633,46 @@ h3 {
 .timocom-lines strong {
   color: var(--ink);
   text-align: right;
+}
+
+.timocom-review-list {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.timocom-review-list h4 {
+  margin: 18px 0 6px;
+  color: var(--navy);
+  font-size: 16px;
+}
+
+.timocom-review-list h4 span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.timocom-review-list blockquote {
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.timocom-review-list blockquote:last-child {
+  border-bottom: 0;
+}
+
+.timocom-review-list blockquote p {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.timocom-review-list cite {
+  color: var(--muted);
+  font-size: 12px;
+  font-style: normal;
 }
 
 .reputation-note {
@@ -2311,8 +2352,7 @@ select:focus {
 }
 
 .home-simple .equipment-strip,
-.home-simple .reputation-grid .rating-card:nth-child(2),
-.home-simple .reputation-grid .rating-card:nth-child(4) {
+.home-simple .reputation-grid .rating-card:nth-child(n + 3) {
   display: none;
 }
 
