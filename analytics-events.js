@@ -117,9 +117,10 @@
     if (form.classList.contains("quote-form")) leadType = "transport_quote";
     if (form.classList.contains("freight-mini-form")) leadType = "freight_popup_request";
 
-    sendEvent("generate_lead", {
+    const channel = event.submitter?.dataset.contactChannel || "whatsapp";
+    sendEvent("contact_handoff_started", {
       lead_type: leadType,
-      form_action: form.getAttribute("action") || "",
+      contact_channel: channel,
       form_page: window.location.pathname,
       ...getAttribution()
     });

@@ -43,7 +43,7 @@
         "url": "https://sailawaylogistics.eu/en.html",
         "logo": "https://sailawaylogistics.eu/assets/sailaway-logo.png",
         "image": "https://sailawaylogistics.eu/assets/sailaway-hero-banner.png",
-        "description": "Freight forwarding and road transport coordination from Spain to Europe, including partial and full loads, urgent routes, dispatch and CMR/POD tracking.",
+        "description": "Freight forwarding and road transport coordination across Spain and between EU countries, with partial, full and urgent options reviewed per shipment.",
         "telephone": "+34624246275",
         "email": "dispo@wolfexpress.rs",
         "address": {
@@ -90,11 +90,11 @@
     <main>
       <section class="hero" id="home" aria-label="Sailaway Logistics">
         <div class="hero-content">
-          <p class="eyebrow">Freight forwarding for businesses · Across Spain</p>
+          <p class="eyebrow">B2B freight forwarding · Spain and EU-wide routes</p>
           <h1>Your cargo. Our job is to find and coordinate the transport.</h1>
-          <p class="hero-copy">We organise import and export between Spain and Europe: we source a suitable option, coordinate each stage and follow the shipment through delivery and POD.</p>
+          <p class="hero-copy">Send us your shipment details. We review routes from Spain and between EU countries, check transport options and coordinate each operation through delivery.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Request transport</a>
+            <a class="button primary" href="#contact">Send shipment details</a>
             <a class="button secondary" href="https://wa.me/34624246275?text=Hello%20Sailaway%20Logistics%2C%20I%20need%20transport%20for%20a%20shipment." target="_blank" rel="noopener">Send route via WhatsApp</a>
           </div>
         </div>
@@ -221,7 +221,11 @@
           <label>Loading date<input type="text" name="Loading date" placeholder="Example: 28 May 2026"></label>
           <label>Target price / budget<input type="text" name="Target price" placeholder="Example: preferred price range"></label>
           <label>Shipment details<textarea name="Shipment details" rows="5" placeholder="Cargo, weight, dimensions, partial or full load, import/export documents"></textarea></label>
-          <button class="button primary full" type="submit">Send transport request</button>
+          <div class="quote-submit-actions">
+            <button class="button primary full" type="submit" data-contact-channel="whatsapp">Continue with WhatsApp</button>
+            <button class="button secondary full" type="submit" data-contact-channel="email">Continue by email</button>
+            <p class="quote-submit-note" data-contact-status role="status" aria-live="polite">Your request is sent only after you confirm the prepared message in WhatsApp or your email app.</p>
+          </div>
         </form>
       </section>
     </main>

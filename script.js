@@ -241,6 +241,7 @@ function initWhatsAppForms() {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
+      const channel = event.submitter?.dataset.contactChannel || "whatsapp";
       const lines = [isEnglish
         ? "Hello Sailaway Logistics, I would like to request transport."
         : "Hola Sailaway Logistics, quiero solicitar transporte."];
@@ -251,7 +252,23 @@ function initWhatsAppForms() {
         if (text) lines.push(`${key}: ${text}`);
       });
 
-      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines.join("\n"))}`;
+      const message = lines.join("\n");
+      const status = form.querySelector("[data-contact-status]");
+
+      if (channel === "email") {
+        const subject = isEnglish ? "Transport request" : "Solicitud de transporte";
+        const url = `mailto:dispo@wolfexpress.rs?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        if (status) status.textContent = isEnglish
+          ? "Your email app should open with the request prepared. Send the email there to complete your request."
+          : "Tu aplicación de correo abrirá el mensaje preparado. Envíalo allí para completar la solicitud.";
+        window.location.href = url;
+        return;
+      }
+
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      if (status) status.textContent = isEnglish
+        ? "WhatsApp will open with the message prepared. Tap Send there to complete your request."
+        : "WhatsApp se abrirá con el mensaje preparado. Pulsa Enviar allí para completar la solicitud.";
       window.open(url, "_blank", "noopener");
     });
   });
