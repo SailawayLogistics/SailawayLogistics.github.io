@@ -177,7 +177,7 @@ const services = [
 const allPages = [...pages, ...services];
 
 function render(page) {
-  const canonical = `https://sailawaylogistics.github.io/${page.slug}.html`;
+  const canonical = `https://sailawaylogistics.eu/${page.slug}.html`;
   const seoTitle = page.seoTitle || page.title;
   const whatsapp = `https://wa.me/34624246275?text=${encodeURIComponent(`Hola Sailaway Logistics, necesito información sobre ${page.title.toLowerCase()}.`)}`;
   return `<!doctype html>
@@ -191,10 +191,10 @@ function render(page) {
     <meta name="description" content="${page.description}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="${canonical}">
-    <meta property="og:type" content="website"><meta property="og:locale" content="es_ES"><meta property="og:title" content="${seoTitle} | Sailaway Logistics"><meta property="og:description" content="${page.description}"><meta property="og:image" content="https://sailawaylogistics.github.io/assets/sailaway-hero-banner.png">
+    <meta property="og:type" content="website"><meta property="og:locale" content="es_ES"><meta property="og:title" content="${seoTitle} | Sailaway Logistics"><meta property="og:description" content="${page.description}"><meta property="og:image" content="https://sailawaylogistics.eu/assets/sailaway-hero-banner.png">
     <title>${seoTitle} | Sailaway Logistics</title>
     <link rel="stylesheet" href="styles.css?v=20260924-national-seo">
-    <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"Service",name:page.title,description:page.description,serviceType:"Freight forwarding y transporte de mercancías por carretera",provider:{"@type":"LocalBusiness",name:"Sailaway Logistics",telephone:"+34624246275",url:"https://sailawaylogistics.github.io/"},areaServed:page.area,url:canonical})}</script>
+    <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"Service",name:page.title,description:page.description,serviceType:"Freight forwarding y transporte de mercancías por carretera",provider:{"@type":"LocalBusiness",name:"Sailaway Logistics",telephone:"+34624246275",url:"https://sailawaylogistics.eu/"},areaServed:page.area,url:canonical})}</script>
   </head>
   <body class="service-page">
     <header class="site-header simple-header"><a class="brand" href="index.html" aria-label="Inicio de Sailaway Logistics"><img src="assets/sailaway-logo.png" alt="Logotipo de Sailaway Logistics"><span>Sailaway Logistics</span></a><nav class="simple-nav"><a href="transporte-espana-europa.html">España Europa</a><a href="freight-forwarding-espana.html">Freight forwarding</a><a href="request-quote.html">Solicitar transporte</a></nav></header>
