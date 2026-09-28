@@ -217,7 +217,7 @@
         <a href="#process">Proceso</a>
         <a href="#reputation">Confianza</a>
         <a href="#contact">Contacto</a>
-        <a href="request-quote.html">Solicitar transporte</a>
+        <button type="button" class="nav-quote-button" data-freight-open>Solicitar transporte</button>
       </nav>
     </header>
 
@@ -228,7 +228,7 @@
           <h1>Freight forwarding desde España y entre países europeos</h1>
           <p class="hero-copy">Envíenos los datos de su carga. Revisamos rutas desde España y entre países de la UE, comprobamos opciones de transporte y coordinamos cada operación hasta la entrega.</p>
           <div class="hero-actions">
-            <a class="button primary" href="request-quote.html">Enviar detalles de una carga</a>
+            <button class="button primary" type="button" data-freight-open>Enviar detalles de una carga</button>
             <a class="button secondary" href="mailto:dispo@wolfexpress.rs?subject=Solicitud%20de%20transporte">Solicitar por email</a>
           </div>
         </div>
@@ -327,7 +327,7 @@
           <h2>Envíe lo que necesita transportar. Ayudamos a encontrar el vehículo adecuado en Europa.</h2>
           <p>Si su empresa tiene mercancía lista en Málaga, Costa del Sol, Andalucía o cualquier punto de España, Sailaway Logistics puede coordinar búsqueda de furgoneta 3,5t u otro vehículo hacia toda Europa, comparar opciones de ruta, alinear fechas y trabajar con su precio objetivo.</p>
           <div class="freight-match-actions">
-            <a class="button primary" href="request-quote.html">Enviar solicitud</a>
+            <button class="button primary" type="button" data-freight-open>Enviar solicitud</button>
             <a class="button secondary" href="mailto:dispo@wolfexpress.rs?subject=Solicitud%20de%20transporte">Solicitar por email</a>
           </div>
         </div>
@@ -370,7 +370,7 @@
           <h2>De la solicitud a la entrega, con un único interlocutor.</h2>
           <p>Recibimos los datos de la mercancía, revisamos opciones mediante nuestra red y herramientas profesionales como Trans.eu y TIMOCOM, coordinamos la operación y mantenemos informado al cliente hasta el cierre documental.</p>
           <div class="freight-match-actions">
-            <a class="button primary" href="request-quote.html">Enviar datos de la carga</a>
+            <button class="button primary" type="button" data-freight-open>Enviar datos de la carga</button>
             <a class="button secondary" href="trans-eu-timocom-support.html">Conocer el proceso</a>
           </div>
         </div>
@@ -442,7 +442,7 @@
             </div>
             <div class="hero-actions">
               <a class="button primary" href="transporte-espana-europa.html">Transporte España Europa</a>
-              <a class="button secondary" href="request-quote.html">Solicitar vehículo</a>
+              <button class="button secondary" type="button" data-freight-open>Solicitar vehículo</button>
             </div>
           </div>
           <figure class="spain-campaign-visual">
@@ -505,7 +505,7 @@
           <article class="core-seo-card">
             <h3><a href="request-quote.html">Solicitar transporte</a></h3>
             <p>Página de conversión para clientes que ya tienen mercancía, ruta, fecha y precio objetivo.</p>
-            <a href="request-quote.html">Enviar solicitud</a>
+            <a href="#contact" data-freight-open>Enviar solicitud</a>
           </article>
           <article class="core-seo-card">
             <h3><a href="trans-eu-timocom-support.html">Documentación CMR/POD</a></h3>
@@ -666,7 +666,7 @@
               <small>Dispatch, documentación, capacidad de flota y solicitudes directas de transporte.</small>
             </summary>
             <div class="service-panel-links">
-              <a href="request-quote.html">Enviar solicitud</a>
+              <a href="#contact" data-freight-open>Enviar solicitud</a>
               <a href="transporte-malaga-europa.html">Transporte Málaga Europa</a>
               <a href="trans-eu-timocom-support.html">Freight forwarding Trans.eu y TIMOCOM</a>
               <a href="freight-forwarding-espana.html">Freight forwarding en toda España</a>
@@ -720,7 +720,7 @@
           <p>Envíe lugar de carga, lugar de descarga, fechas, detalles de la mercancía y precio objetivo. Sailaway Logistics revisa opciones de vehículo en Europa, dispatch y documentación en un proceso claro.</p>
         </div>
         <div class="conversion-actions">
-          <a class="button primary" href="request-quote.html">Enviar solicitud</a>
+          <button class="button primary" type="button" data-freight-open>Enviar solicitud</button>
           <a class="button secondary" href="request-quote.html">Ver checklist</a>
         </div>
       </section>
@@ -1168,21 +1168,21 @@
       <p><span>©</span> <span data-year></span> Sailaway Logistics. <span>CEO: Marko Vukobratovic</span> · +34 624 246 275 · <a href="mailto:dispo@wolfexpress.rs">dispo@wolfexpress.rs</a> · <a href="about-sailaway-logistics.html">Sobre nosotros</a></p>
     </footer>
 
-    <button class="freight-float-button" type="button" data-freight-open>Enviar solicitud</button>
+    <button class="freight-float-button" type="button" data-freight-open>Solicitar transporte</button>
 
     <div class="freight-modal" data-freight-modal aria-hidden="true">
       <div class="freight-dialog" role="dialog" aria-modal="true" aria-labelledby="freight-title">
         <button class="freight-close" type="button" data-freight-close aria-label="Cerrar solicitud de transporte">×</button>
         <div class="freight-dialog-grid">
           <div>
-            <p class="eyebrow">¿Necesita transportar mercancía?</p>
-            <h2 id="freight-title">Ayudamos a empresas en España a encontrar el vehículo adecuado para rutas europeas</h2>
-            <p>Si tiene mercancía en Málaga, Andalucía o cualquier punto de España, Sailaway Logistics puede ayudar a coordinar una furgoneta 3,5t u otro vehículo, revisar fecha de carga, opciones de ruta y precio objetivo.</p>
+            <p class="eyebrow">Solicitud de transporte</p>
+            <h2 id="freight-title">Cuéntenos qué necesita transportar</h2>
+            <p>Indique los datos disponibles de la carga y la ruta. Revisaremos las opciones y nos pondremos en contacto. El precio objetivo es opcional.</p>
             <ul class="freight-benefits">
               <li>Envíe lugar de carga y lugar de descarga.</li>
               <li>Envíe dimensiones, peso, fecha y requisitos especiales.</li>
-              <li>Comparta el precio objetivo o presupuesto.</li>
-              <li>Revisamos una opción de transporte adecuada y le informamos del proceso.</li>
+              <li>Incluya un email para que podamos responderle.</li>
+              <li>El precio objetivo es opcional; no hace falta tenerlo para enviar la solicitud.</li>
             </ul>
             <div class="freight-country-strip">
               <span>España</span>
@@ -1196,8 +1196,16 @@
           </div>
           <form class="freight-mini-form" data-email-form>
             <label>
-              Empresa o contacto
-              <input type="text" name="Empresa o contacto" required>
+              Empresa <span>(obligatorio)</span>
+              <input type="text" name="Empresa" autocomplete="organization" required>
+            </label>
+            <label>
+              Email <span>(obligatorio)</span>
+              <input type="email" name="Email de contacto" autocomplete="email" required>
+            </label>
+            <label>
+              Teléfono de contacto
+              <input type="tel" name="Teléfono de contacto" autocomplete="tel">
             </label>
             <label>
               Lugar de carga
@@ -1209,22 +1217,34 @@
             </label>
             <label>
               Fecha de carga
-              <input type="text" name="Fecha de carga" placeholder="Ejemplo: 28 mayo 2026">
+              <input type="date" name="Fecha de carga">
             </label>
             <label>
               Fecha de descarga
-              <input type="text" name="Fecha de descarga" placeholder="Ejemplo: 29 mayo 2026">
+              <input type="date" name="Fecha de descarga">
             </label>
             <label>
-              Precio objetivo / presupuesto
+              Tipo de mercancía
+              <input type="text" name="Tipo de mercancía" placeholder="Palets, maquinaria, cajas...">
+            </label>
+            <div class="freight-form-row">
+              <label>Peso total<input type="text" name="Peso total" placeholder="Ej.: 850 kg"></label>
+              <label>Palets o piezas<input type="text" name="Palets o piezas" placeholder="Ej.: 4 europalets"></label>
+            </div>
+            <label>
+              Precio objetivo / presupuesto <span>(opcional)</span>
               <input type="text" name="Precio objetivo" placeholder="Ejemplo: rango de precio deseado">
             </label>
             <label>
-              Mercancía y requisitos del vehículo
-              <textarea name="Mercancía y vehículo" rows="4" placeholder="Mercancía, peso, dimensiones, furgoneta u otro vehículo, requisitos de carga"></textarea>
+              Dimensiones y vehículo necesario
+              <input type="text" name="Dimensiones y vehículo" placeholder="Medidas, furgoneta 3,5t, lona, plataforma...">
             </label>
-            <button class="button primary full" type="submit">Enviar solicitud de transporte</button>
-            <a class="button secondary full freight-email" href="mailto:dispo@wolfexpress.rs?subject=Solicitud%20de%20transporte">Solicitar por email</a>
+            <label>
+              Detalles y requisitos de transporte
+              <textarea name="Detalles y requisitos" rows="3" placeholder="Tipo de carga/descarga, mercancía ADR, horarios u otras instrucciones"></textarea>
+            </label>
+            <button class="button primary full" type="submit">Continuar al email para enviar</button>
+            <p class="quote-submit-note" data-contact-status role="status" aria-live="polite">Se abrirá su aplicación de correo con los datos preparados. Pulse Enviar allí para completar la solicitud.</p>
           </form>
         </div>
       </div>

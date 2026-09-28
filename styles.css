@@ -2129,6 +2129,61 @@ select:focus {
   background: var(--soft);
 }
 
+.freight-mini-form > label,
+.freight-form-row > label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.freight-mini-form label span {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.freight-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.freight-mini-form input,
+.freight-mini-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+
+.freight-mini-form textarea {
+  resize: vertical;
+}
+
+.freight-mini-form input:focus,
+.freight-mini-form textarea:focus {
+  outline: 2px solid var(--teal);
+  outline-offset: 1px;
+}
+
+.nav-quote-button {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
 .freight-mini-form .button.secondary {
   color: var(--navy);
   border-color: var(--line);
@@ -2264,14 +2319,6 @@ select:focus {
 .home-simple .supporting-seo-section {
   padding-top: 48px;
   padding-bottom: 48px;
-}
-
-.home-simple .freight-float-button {
-  display: none;
-}
-
-.home-simple .freight-modal {
-  display: none !important;
 }
 
 .home-simple .supporting-seo-section .section-heading {

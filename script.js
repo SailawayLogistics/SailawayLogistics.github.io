@@ -5,6 +5,7 @@ const year = document.querySelector("[data-year]");
 const freightModal = document.querySelector("[data-freight-modal]");
 const freightOpenButtons = document.querySelectorAll("[data-freight-open]");
 const freightCloseButton = document.querySelector("[data-freight-close]");
+let freightReturnFocus = null;
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -34,30 +35,19 @@ if (navToggle && nav) {
 
 const openFreightModal = () => {
   if (!freightModal) return;
+  freightReturnFocus = document.activeElement;
   freightModal.classList.add("is-open");
   freightModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  freightCloseButton?.focus();
 };
 
 const closeFreightModal = () => {
   if (!freightModal) return;
   freightModal.classList.remove("is-open");
   freightModal.setAttribute("aria-hidden", "true");
-};
-
-const hasSeenFreightPopup = () => {
-  try {
-    return sessionStorage.getItem("sailawayFreightPopupShown") === "true";
-  } catch (error) {
-    return false;
-  }
-};
-
-const markFreightPopupSeen = () => {
-  try {
-    sessionStorage.setItem("sailawayFreightPopupShown", "true");
-  } catch (error) {
-    // Algunos modos de privacidad bloquean el almacenamiento de sesión; el modal sigue funcionando manualmente.
-  }
+  document.body.classList.remove("modal-open");
+  freightReturnFocus?.focus?.();
 };
 
 freightOpenButtons.forEach((button) => {
@@ -81,12 +71,6 @@ if (freightModal) {
     }
   });
 
-  if (!hasSeenFreightPopup()) {
-    window.setTimeout(() => {
-      openFreightModal();
-      markFreightPopupSeen();
-    }, 1600);
-  }
 }
 
 const coveragePoints = [
