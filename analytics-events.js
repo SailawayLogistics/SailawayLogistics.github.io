@@ -61,7 +61,6 @@
     if (!href) return "";
     if (href.startsWith("mailto:")) return "email";
     if (href.startsWith("tel:")) return "phone";
-    if (href.includes("wa.me") || href.includes("whatsapp")) return "whatsapp";
     if (href.includes("request-quote.html")) return "quote_page";
     return "";
   };
@@ -87,8 +86,6 @@
         sendEvent("email_click", { link_text: label, link_url: href });
       } else if (type === "phone") {
         sendEvent("phone_click", { link_text: label, link_url: href });
-      } else if (type === "whatsapp") {
-        sendEvent("whatsapp_click", { link_text: label, link_url: href });
       } else if (type === "quote_page") {
         sendEvent("quote_page_click", { link_text: label, link_url: href });
       } else if (clickable.closest(".seo-link-grid")) {
@@ -117,7 +114,7 @@
     if (form.classList.contains("quote-form")) leadType = "transport_quote";
     if (form.classList.contains("freight-mini-form")) leadType = "freight_popup_request";
 
-    const channel = event.submitter?.dataset.contactChannel || "whatsapp";
+    const channel = event.submitter?.dataset.contactChannel || "email";
     sendEvent("contact_handoff_started", {
       lead_type: leadType,
       contact_channel: channel,
