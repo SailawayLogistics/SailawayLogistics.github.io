@@ -236,6 +236,7 @@ function initWhatsAppForms() {
   const forms = document.querySelectorAll("[data-whatsapp-form]");
   const whatsappNumber = "34624246275";
   const isEnglish = document.documentElement.lang === "en";
+  const isFrench = document.documentElement.lang === "fr";
 
   forms.forEach((form) => {
     form.addEventListener("submit", (event) => {
@@ -244,7 +245,9 @@ function initWhatsAppForms() {
       const channel = event.submitter?.dataset.contactChannel || "whatsapp";
       const lines = [isEnglish
         ? "Hello Sailaway Logistics, I would like to request transport."
-        : "Hola Sailaway Logistics, quiero solicitar transporte."];
+        : isFrench
+          ? "Bonjour Sailaway Logistics, je souhaite demander un transport."
+          : "Hola Sailaway Logistics, quiero solicitar transporte."];
       const formData = new FormData(form);
 
       formData.forEach((value, key) => {
@@ -256,11 +259,13 @@ function initWhatsAppForms() {
       const status = form.querySelector("[data-contact-status]");
 
       if (channel === "email") {
-        const subject = isEnglish ? "Transport request" : "Solicitud de transporte";
+        const subject = isEnglish ? "Transport request" : isFrench ? "Demande de transport" : "Solicitud de transporte";
         const url = `mailto:dispo@wolfexpress.rs?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
         if (status) status.textContent = isEnglish
           ? "Your email app should open with the request prepared. Send the email there to complete your request."
-          : "Tu aplicación de correo abrirá el mensaje preparado. Envíalo allí para completar la solicitud.";
+          : isFrench
+            ? "Votre application de messagerie va s'ouvrir avec le message préparé. Envoyez-le pour finaliser votre demande."
+            : "Tu aplicación de correo abrirá el mensaje preparado. Envíalo allí para completar la solicitud.";
         window.location.href = url;
         return;
       }
@@ -268,7 +273,9 @@ function initWhatsAppForms() {
       const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
       if (status) status.textContent = isEnglish
         ? "WhatsApp will open with the message prepared. Tap Send there to complete your request."
-        : "WhatsApp se abrirá con el mensaje preparado. Pulsa Enviar allí para completar la solicitud.";
+        : isFrench
+          ? "WhatsApp va s'ouvrir avec le message préparé. Appuyez sur Envoyer pour finaliser votre demande."
+          : "WhatsApp se abrirá con el mensaje preparado. Pulsa Enviar allí para completar la solicitud.";
       window.open(url, "_blank", "noopener");
     });
   });

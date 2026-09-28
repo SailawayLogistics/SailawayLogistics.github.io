@@ -119,6 +119,10 @@ a {
   cursor: pointer;
 }
 
+.language-trigger + .language-trigger {
+  margin-left: 8px;
+}
+
 .site-header.is-scrolled .language-trigger {
   border-color: var(--line);
   background: #fff;
