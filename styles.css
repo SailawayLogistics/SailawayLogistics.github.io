@@ -2255,17 +2255,13 @@ select:focus {
   background: var(--teal);
 }
 
-/* Simplified home presentation: keep the SEO architecture while reducing repetition. */
+/* Simplified home presentation. */
 .home-simple {
   background: #f3f7f8;
 }
 
 .home-simple main {
   background: #f3f7f8;
-}
-
-.home-simple .home-hide {
-  display: none;
 }
 
 .home-simple .hero {
