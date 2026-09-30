@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Explore dos mapas esquemáticos de Sailaway Logistics: cobertura de flota propia y organización de transporte por carretera en Europa. Envíe los datos de su mercancía para solicitar una propuesta.">
+    <meta name="theme-color" content="#082646">
+    <link rel="canonical" href="https://sailawaylogistics.eu/rutas-europa.html">
+    <link rel="icon" href="assets/sailaway-logo.png" type="image/png">
+    <title>Cobertura de transporte en Europa | Sailaway Logistics</title>
+    <link rel="stylesheet" href="styles.css?v=20260930-routes">
+    <link rel="stylesheet" href="routes.css?v=20260930-1">
+  </head>
+  <body class="route-page">
+    <header class="site-header simple-header">
+      <a class="brand" href="index.html" aria-label="Sailaway Logistics - inicio"><img src="assets/sailaway-logo.png" alt="Logotipo de Sailaway Logistics"><span>Sailaway Logistics</span></a>
+      <nav class="simple-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="freight-forwarding-europa.html">Freight forwarding</a>
+        <a href="request-quote.html">Solicitar transporte</a>
+      </nav>
+    </header>
+
+    <main class="coverage-main">
+      <div class="coverage-intro">
+        <p class="eyebrow">Sailaway Logistics · Europa</p>
+        <h1>Dos redes, una visión de Europa.</h1>
+        <p>Trabajamos con nuestra flota y organizamos transporte para clientes que necesitan capacidad por carretera. Consulte las dos áreas por separado y envíenos los datos de su carga para estudiar una opción concreta.</p>
+      </div>
+
+      <section class="coverage-section" aria-labelledby="coverage-title">
+        <div class="coverage-heading">
+          <h2 id="coverage-title">Cobertura europea</h2>
+          <p>La distribución de puntos y las curvas son una representación esquemática de la cobertura, no ubicaciones de entregas ni trayectos exactos realizados.</p>
+        </div>
+        <div class="coverage-grid">
+          <div class="coverage-panel coverage-panel--carrier">
+            <div class="coverage-panel-title"><h3>Flota propia</h3><p>Transporte por carretera</p></div>
+            <div class="coverage-map" id="carrier-map" role="img" aria-label="Mapa esquemático de cobertura europea de la flota propia"><p class="coverage-fallback">Cargando mapa de Europa…</p></div>
+          </div>
+          <div class="coverage-panel coverage-panel--forwarding">
+            <div class="coverage-panel-title"><h3>Freight forwarding</h3><p>Organización de transporte</p></div>
+            <div class="coverage-map" id="forwarding-map" role="img" aria-label="Mapa esquemático de cobertura europea para la organización de transporte"><p class="coverage-fallback">Cargando mapa de Europa…</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="coverage-request" aria-labelledby="request-title">
+        <div><p class="eyebrow">Para fabricantes, importadores y exportadores</p><h2 id="request-title">¿Tiene mercancía para transportar?</h2><p>Comparta origen, destino, fecha, mercancía, peso y dimensiones. Revisaremos las condiciones antes de proponer capacidad, plazo o precio.</p></div>
+        <div class="coverage-actions"><a class="button primary" href="request-quote.html">Enviar detalles de la carga</a><a href="mailto:dispo@wolfexpress.rs">dispo@wolfexpress.rs</a></div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+    <script src="routes-map.js?v=20260930-1"></script>
+    <script src="analytics-events.js"></script>
+  </body>
+</html>
