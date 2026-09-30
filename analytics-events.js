@@ -61,6 +61,8 @@
     if (!href) return "";
     if (href.startsWith("mailto:")) return "email";
     if (href.startsWith("tel:")) return "phone";
+    if (href.startsWith("https://tally.so/r/kdMR1M")) return "transport_form";
+    if (href.includes("europages.") && href.includes("sailaway-logistics")) return "europages";
     if (href.includes("request-quote.html")) return "quote_page";
     return "";
   };
@@ -86,6 +88,10 @@
         sendEvent("email_click", { link_text: label, link_url: href });
       } else if (type === "phone") {
         sendEvent("phone_click", { link_text: label, link_url: href });
+      } else if (type === "transport_form") {
+        sendEvent("transport_form_open", { link_text: label, link_url: href });
+      } else if (type === "europages") {
+        sendEvent("europages_profile_click", { link_text: label, link_url: href });
       } else if (type === "quote_page") {
         sendEvent("quote_page_click", { link_text: label, link_url: href });
       } else if (clickable.closest(".seo-link-grid")) {
