@@ -67,6 +67,21 @@
     return "";
   };
 
+  let tallyScriptPromise;
+  const loadTallyWidget = () => {
+    if (window.Tally?.openPopup) return Promise.resolve();
+    if (!tallyScriptPromise) {
+      tallyScriptPromise = new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "https://tally.so/widgets/embed.js";
+        script.onload = () => window.Tally?.openPopup ? resolve() : reject(new Error("Tally widget unavailable"));
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+    return tallyScriptPromise;
+  };
+
   document.addEventListener("click", (event) => {
     const clickable = event.target.closest("a, button");
     if (!clickable) return;
@@ -90,6 +105,20 @@
         sendEvent("phone_click", { link_text: label, link_url: href });
       } else if (type === "transport_form") {
         sendEvent("transport_form_open", { link_text: label, link_url: href });
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+        event.preventDefault();
+        loadTallyWidget().then(() => {
+          window.Tally.openPopup("kdMR1M", {
+            layout: "modal",
+            width: 680,
+            overlay: true,
+            onOpen: () => sendEvent("transport_form_loaded", { form_id: "kdMR1M" }),
+            onSubmit: () => sendEvent("transport_quote_submitted", { form_id: "kdMR1M" })
+          });
+        }).catch(() => {
+          window.location.assign(href);
+        });
       } else if (type === "europages") {
         sendEvent("europages_profile_click", { link_text: label, link_url: href });
       } else if (type === "quote_page") {
