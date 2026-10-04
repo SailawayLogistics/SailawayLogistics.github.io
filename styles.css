@@ -2817,6 +2817,10 @@ select:focus {
 }
 
 @media (max-width: 720px) {
+  .freight-float-button {
+    display: none;
+  }
+
   .site-header {
     gap: 8px;
     padding: 10px 16px;
