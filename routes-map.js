@@ -1,5 +1,5 @@
 // These dots are a deterministic visual texture for coverage, not shipment records.
-const carrierCountryIds = new Set([40, 56, 100, 191, 203, 208, 233, 246, 250, 276, 300, 348, 428, 440, 442, 499, 528, 620, 642, 688, 703, 705, 724, 752]);
+const carrierCountryIds = new Set([40, 56, 70, 100, 191, 203, 208, 233, 246, 250, 276, 300, 348, 428, 440, 442, 499, 528, 620, 642, 688, 703, 705, 724, 752]);
 const forwardingCountryIds = new Set([...carrierCountryIds, 380, 756]);
 
 const anchors = {
@@ -26,7 +26,7 @@ const forwardingConnections = [
 function coverageDots(features, includedIds, projection, seed) {
   const random = d3.randomLcg(seed);
   const major = new Set([250, 276, 724, 380, 620, 642, 752]);
-  const compact = new Set([56, 442, 528, 703, 705, 756]);
+  const compact = new Set([56, 70, 442, 528, 703, 705, 756]);
   const dots = [];
 
   for (const country of features.filter((feature) => includedIds.has(Number(feature.id)))) {
