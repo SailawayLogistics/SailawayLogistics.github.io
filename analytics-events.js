@@ -1,4 +1,16 @@
 (() => {
+  if (typeof window.gtag !== "function") {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", "G-F2PL5XNK4D");
+
+    const tag = document.createElement("script");
+    tag.async = true;
+    tag.src = "https://www.googletagmanager.com/gtag/js?id=G-F2PL5XNK4D";
+    document.head.appendChild(tag);
+  }
+
   const attributionKeys = [
     "utm_source",
     "utm_medium",
