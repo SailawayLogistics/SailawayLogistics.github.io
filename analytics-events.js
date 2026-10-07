@@ -73,7 +73,7 @@
     if (!href) return "";
     if (href.startsWith("mailto:")) return "email";
     if (href.startsWith("tel:")) return "phone";
-    if (href.startsWith("https://tally.so/r/kdMR1M")) return "transport_form";
+    if (/^https:\/\/tally\.so\/r\/(kdMR1M|LZQVdy|RG724K)(?:[?#]|$)/.test(href)) return "transport_form";
     if (href.includes("europages.") && href.includes("sailaway-logistics")) return "europages";
     if (href.includes("request-quote.html")) return "quote_page";
     return "";
@@ -120,13 +120,14 @@
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
         event.preventDefault();
+        const formId = new URL(href).pathname.split("/").pop();
         loadTallyWidget().then(() => {
-          window.Tally.openPopup("kdMR1M", {
+          window.Tally.openPopup(formId, {
             layout: "modal",
             width: 680,
             overlay: true,
-            onOpen: () => sendEvent("transport_form_loaded", { form_id: "kdMR1M" }),
-            onSubmit: () => sendEvent("transport_quote_submitted", { form_id: "kdMR1M" })
+            onOpen: () => sendEvent("transport_form_loaded", { form_id: formId }),
+            onSubmit: () => sendEvent("transport_quote_submitted", { form_id: formId })
           });
         }).catch(() => {
           window.location.assign(href);
