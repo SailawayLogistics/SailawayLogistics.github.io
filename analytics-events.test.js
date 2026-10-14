@@ -49,7 +49,7 @@ function setup({ widgetLoads = true } = {}) {
     }
   };
 
-  vm.runInNewContext(source, { window, document, HTMLAnchorElement, URLSearchParams });
+  vm.runInNewContext(source, { window, document, HTMLAnchorElement, URL, URLSearchParams });
 
   const link = new HTMLAnchorElement();
   link.textContent = "Enviar detalles de una carga";
