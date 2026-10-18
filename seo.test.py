@@ -91,12 +91,25 @@ class SEOTests(unittest.TestCase):
             for key in ['index.html','en.html','fr.html','freight-forwarding-espana.html','freight-forwarding-europa.html','eu-freight-forwarding.html']:
                 self.assertIn(DOMAIN+('' if key=='index.html' else key),urls)
 
-    def test_english_freight_faq_visible(self):
-        p=self.pages['eu-freight-forwarding.html']
-        visible=' '.join(' '.join(p.visible).split())
-        for node in schema_nodes(p.schema):
-            if node.get('@type')=='Question':
-                self.assertIn(node['name'],visible)
-                self.assertIn(node['acceptedAnswer']['text'],visible)
+    def test_every_structured_faq_is_visible(self):
+        for name,p in self.pages.items():
+            visible=' '.join(' '.join(p.visible).split())
+            for node in schema_nodes(p.schema):
+                if node.get('@type')=='Question':
+                    with self.subTest(page=name,question=node['name']):
+                        self.assertIn(' '.join(node['name'].split()),visible)
+                        self.assertIn(' '.join(node['acceptedAnswer']['text'].split()),visible)
+
+    def test_homepage_site_identity(self):
+        for name in ['index.html','en.html','fr.html']:
+            nodes=list(schema_nodes(self.pages[name].schema))
+            site=[n for n in nodes if n.get('@type')=='WebSite']
+            self.assertEqual(len(site),1,name)
+            self.assertEqual(site[0]['url'],DOMAIN)
+            self.assertEqual(site[0]['name'],'Sailaway Logistics')
+            self.assertEqual(site[0]['publisher']['@id'],DOMAIN+'#organization')
+            organizations=[n for n in nodes if n.get('@id')==DOMAIN+'#organization' and 'name' in n]
+            self.assertTrue(organizations,name)
+            self.assertEqual(organizations[0]['url'],DOMAIN)
 
 if __name__=='__main__': unittest.main()
