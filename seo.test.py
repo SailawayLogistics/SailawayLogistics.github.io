@@ -91,6 +91,38 @@ class SEOTests(unittest.TestCase):
             for key in ['index.html','en.html','fr.html','freight-forwarding-espana.html','freight-forwarding-europa.html','eu-freight-forwarding.html']:
                 self.assertIn(DOMAIN+('' if key=='index.html' else key),urls)
 
+    def test_all_service_pages_are_reachable_from_homepage(self):
+        reached, pending = set(), ['index.html']
+        while pending:
+            name = pending.pop()
+            if name in reached:
+                continue
+            reached.add(name)
+            for anchor in self.pages[name].select('a'):
+                url = urlparse(anchor.get('href', ''))
+                if url.scheme not in ('', 'https', 'http'):
+                    continue
+                if url.netloc and url.netloc != urlparse(DOMAIN).netloc:
+                    continue
+                target = unquote(url.path).lstrip('/') or 'index.html'
+                if target in self.pages and target not in reached:
+                    pending.append(target)
+        self.assertEqual(set(self.pages) - reached, set(), 'Unlinked canonical pages')
+
+    def test_indexable_pages_and_sitemap_formats_agree(self):
+        expected = {DOMAIN + ('' if name == 'index.html' else name) for name in self.pages}
+        xml_urls = {n.text for n in ET.parse(ROOT/'sitemap.xml').findall('.//{*}loc')}
+        text_urls = set((ROOT/'sitemap.txt').read_text().splitlines())
+        self.assertEqual(xml_urls, expected)
+        self.assertEqual(text_urls, xml_urls)
+        for name, page in self.pages.items():
+            with self.subTest(page=name):
+                for meta in page.select('meta', 'name', 'robots'):
+                    directives = {value.strip().lower() for value in meta.get('content', '').split(',')}
+                    self.assertFalse({'noindex', 'none'} & directives)
+        robots = (ROOT/'robots.txt').read_text()
+        self.assertIn('Sitemap: ' + DOMAIN + 'sitemap.xml', robots)
+
     def test_every_structured_faq_is_visible(self):
         for name,p in self.pages.items():
             visible=' '.join(' '.join(p.visible).split())
