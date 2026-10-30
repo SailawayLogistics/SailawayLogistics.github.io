@@ -1537,10 +1537,11 @@ h3 {
 .network-experience-section {
   max-width: 1160px;
   margin: 44px auto;
-  padding: 38px clamp(18px, 4vw, 42px);
-  border: 1px solid var(--line);
+  padding: 44px clamp(18px, 4vw, 42px) 38px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(223, 240, 241, 0.72), rgba(247, 251, 252, 0.96) 55%, rgba(239, 248, 245, 0.82));
+  background: linear-gradient(120deg, #06192f 0%, #082646 58%, #0b5261 100%);
+  box-shadow: 0 18px 48px rgba(5, 25, 47, 0.16);
 }
 
 .network-experience-top {
@@ -1553,18 +1554,19 @@ h3 {
 .network-experience-copy h2 {
   margin: 10px 0 14px;
   max-width: 560px;
-  color: var(--ink);
+  color: #fff;
   font-size: clamp(27px, 3.2vw, 38px);
   line-height: 1.12;
 }
 
 .network-experience-copy > p:not(.eyebrow) {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.78);
   font-size: 16px;
   line-height: 1.65;
 }
 
-.network-routes strong { color: var(--ink); }
+.network-experience-copy .eyebrow { color: #80d7cc; }
+.network-routes strong { color: #fff; }
 
 .network-name-grid {
   display: grid;
@@ -1577,11 +1579,11 @@ h3 {
   align-items: center;
   min-height: 56px;
   padding: 12px 16px;
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--teal);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 3px solid #45c1b1;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.86);
-  color: var(--navy);
+  background: rgba(255, 255, 255, 0.09);
+  color: #fff;
   font-weight: 800;
 }
 
@@ -1595,14 +1597,14 @@ h3 {
 .network-capability-grid article {
   min-height: 120px;
   padding: 18px 20px;
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--green);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 3px solid #8dc55a;
   border-radius: 8px;
-  background: #fff;
+  background: rgba(3, 20, 37, 0.38);
 }
 
-.network-capability-grid h3 { margin: 0 0 8px; color: var(--ink); font-size: 18px; }
-.network-capability-grid p { margin: 0; color: var(--muted); line-height: 1.55; }
+.network-capability-grid h3 { margin: 0 0 8px; color: #fff; font-size: 18px; }
+.network-capability-grid p { margin: 0; color: rgba(255, 255, 255, 0.76); line-height: 1.55; }
 
 @media (max-width: 760px) {
   .network-experience-top { grid-template-columns: 1fr; }
