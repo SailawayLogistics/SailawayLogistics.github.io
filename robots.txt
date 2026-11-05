@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sailawaylogistics.eu/sitemap.xml
+Sitemap: https://sailawaylogistics.eu/sitemap-core.xml
