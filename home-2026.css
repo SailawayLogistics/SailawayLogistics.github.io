@@ -149,3 +149,52 @@ body {margin:0;background:#091a2b}
   border: 1px solid var(--sw-mint);
   border-radius: 9px;
 }
+
+#sailaway-home .sw-partnership {
+  grid-template-columns: minmax(0, 1fr) minmax(0, max-content);
+}
+
+#sailaway-home .sw-partner-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px 12px 12px;
+  border: 1px solid var(--sw-line);
+  border-radius: 12px;
+  background: var(--sw-deep);
+  text-decoration: none;
+}
+
+#sailaway-home .sw-partner-link:hover {
+  border-color: var(--sw-teal);
+  text-decoration: none;
+}
+
+#sailaway-home .sw-partner-link img {
+  display: block;
+  flex: none;
+  width: clamp(76px, 10vw, 112px);
+  height: auto;
+  border-radius: 8px;
+}
+
+#sailaway-home .sw-partner-link strong,
+#sailaway-home .sw-partner-link small {
+  display: block;
+}
+
+#sailaway-home .sw-partner-link small {
+  margin-top: 4px;
+  color: var(--sw-teal);
+  font-size: 13px;
+}
+
+@media (max-width: 660px) {
+  #sailaway-home .sw-partnership {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #sailaway-home .sw-partner-link {
+    justify-self: start;
+  }
+}
