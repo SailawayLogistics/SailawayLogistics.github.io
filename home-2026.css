@@ -133,3 +133,19 @@ body {margin:0;background:#091a2b}
     grid-template-columns: 1fr;
   }
 }
+
+#sailaway-home .sw-top .sw-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+}
+
+#sailaway-home .sw-brand-crest {
+  display: block;
+  flex: none;
+  width: 86px;
+  height: 68px;
+  object-fit: cover;
+  border: 1px solid var(--sw-mint);
+  border-radius: 9px;
+}
