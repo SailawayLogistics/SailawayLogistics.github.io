@@ -198,3 +198,37 @@ body {margin:0;background:#091a2b}
     justify-self: start;
   }
 }
+
+#sailaway-home .sw-valencia {
+  position: relative;
+  padding-block: clamp(24px, 4vw, 42px);
+}
+
+#sailaway-home .sw-valencia .sw-eyebrow {
+  color: var(--sw-mint);
+  margin-bottom: 10px;
+}
+
+#sailaway-home .sw-valencia p {
+  max-width: 62ch;
+  margin-top: 10px;
+}
+
+#sailaway-home .sw-valencia-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+#sailaway-home .sw-valencia-services li {
+  padding: 5px 10px;
+  border: 1px solid var(--sw-line);
+  border-radius: 6px;
+  background: var(--sw-deep);
+  color: var(--sw-ink);
+  font-size: 12px;
+  font-weight: 600;
+}
