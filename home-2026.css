@@ -232,3 +232,27 @@ body {margin:0;background:#091a2b}
   font-size: 12px;
   font-weight: 600;
 }
+
+#sailaway-home .sw-hero-services {
+  max-width: 55ch;
+  margin-top: 12px;
+  color: var(--sw-muted);
+  font-size: 14px;
+}
+
+#sailaway-home .sw-coverage .sw-map-link {
+  display: table;
+}
+
+#sailaway-home .sw-country-list a {
+  padding: 7px 12px;
+  border: 1px solid var(--sw-line);
+  border-radius: 4px;
+  background: var(--sw-surface);
+  color: var(--sw-teal);
+  font-size: 11px;
+}
+
+#sailaway-home .sw-country-list a:hover {
+  border-color: var(--sw-teal);
+}
