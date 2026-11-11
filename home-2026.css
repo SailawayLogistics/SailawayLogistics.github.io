@@ -256,3 +256,152 @@ body {margin:0;background:#091a2b}
 #sailaway-home .sw-country-list a:hover {
   border-color: var(--sw-teal);
 }
+
+#sailaway-home .sw-cooperation {
+  position: relative;
+  background: var(--sw-paper);
+  border-block: 1px solid var(--sw-line);
+}
+
+#sailaway-home .sw-cooperation-head,
+#sailaway-home .sw-cooperation-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#sailaway-home .sw-cooperation-head {
+  padding-block: 24px;
+  background: var(--sw-surface-alt);
+  border-bottom: 1px solid var(--sw-line);
+}
+
+#sailaway-home .sw-cooperation h2,
+#sailaway-home .sw-cooperation h3,
+#sailaway-home .sw-cooperation .sw-eyebrow {
+  letter-spacing: 0;
+}
+
+#sailaway-home .sw-cooperation .sw-eyebrow {
+  margin-bottom: 8px;
+}
+
+#sailaway-home .sw-cooperation-marks,
+#sailaway-home .sw-platform-marks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#sailaway-home .sw-cooperation-marks {
+  color: var(--sw-mint);
+}
+
+#sailaway-home .sw-cooperation-marks img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+#sailaway-home .sw-cooperation-body {
+  padding-block: 24px;
+}
+
+#sailaway-home .sw-cooperation .sw-cooperation-intro {
+  margin-top: 8px;
+  max-width: 62ch;
+  color: var(--sw-muted);
+}
+
+#sailaway-home .sw-cooperation-platforms {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+#sailaway-home .sw-cooperation-platforms > * {
+  min-width: 0;
+  border-top: 1px solid var(--sw-line);
+  padding-top: 15px;
+}
+
+#sailaway-home .sw-cooperation-platforms .sw-cooperation-news {
+  border-top-color: var(--sw-mint);
+}
+
+#sailaway-home .sw-cooperation-news .sw-eyebrow {
+  color: var(--sw-mint);
+}
+
+#sailaway-home .sw-cooperation-platforms p {
+  max-width: 55ch;
+  margin-top: 8px;
+  color: var(--sw-muted);
+  font-size: 13px;
+}
+
+#sailaway-home .sw-platform-marks {
+  list-style: none;
+  margin: 13px 0 0;
+  padding: 0;
+}
+
+#sailaway-home .sw-platform-marks > * {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 10px;
+  border: 1px solid #e5ecef;
+  border-radius: 6px;
+  background: #fff;
+}
+
+#sailaway-home .sw-platform-marks img {
+  display: block;
+  object-fit: contain;
+}
+
+#sailaway-home .sw-platform-marks .sw-platform-timocom {
+  border-color: var(--sw-line);
+  background: var(--sw-surface);
+}
+
+#sailaway-home .sw-platform-credits {
+  display: block;
+  margin-top: 12px;
+  color: var(--sw-muted);
+  font-size: 11px;
+}
+
+#sailaway-home .sw-platform-credits a,
+#sailaway-home .sw-cooperation-foot p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#sailaway-home .sw-cooperation-foot {
+  padding-block: 15px;
+  border-top: 1px solid var(--sw-line);
+  background: var(--sw-field);
+}
+
+#sailaway-home .sw-cooperation-foot p {
+  color: var(--sw-muted);
+  font-size: 12px;
+}
+
+#sailaway-home .sw-cooperation-foot strong {
+  color: var(--sw-ink);
+}
+
+@media (max-width: 560px) {
+  #sailaway-home .sw-cooperation-platforms {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
