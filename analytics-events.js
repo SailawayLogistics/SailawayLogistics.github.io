@@ -75,7 +75,7 @@
     if (href.startsWith("tel:")) return "phone";
     if (/^https:\/\/tally\.so\/r\/(kdMR1M|LZQVdy|RG724K)(?:[?#]|$)/.test(href)) return "transport_form";
     if (href.includes("europages.") && href.includes("sailaway-logistics")) return "europages";
-    if (href.includes("request-quote.html")) return "quote_page";
+    if (/request-quote(?:-en|-fr)?\.html(?:[?#]|$)/.test(href)) return "quote_page";
     return "";
   };
 

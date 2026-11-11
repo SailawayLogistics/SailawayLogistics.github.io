@@ -1015,9 +1015,15 @@ h3 {
 
 .simple-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 18px;
   font-size: 14px;
   font-weight: 800;
+}
+
+.simple-nav a[hreflang][aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
 
 .operation-proof {

@@ -91,8 +91,13 @@ async function startCoverageMaps() {
     renderCoverageMap("carrier-map", countries, "carrier");
     renderCoverageMap("forwarding-map", countries, "forwarding");
   } catch (error) {
+    const message = {
+      es: "El mapa no está disponible en este momento. Puede enviarnos su ruta para revisarla.",
+      en: "The map is temporarily unavailable. Send us your route and we will review it.",
+      fr: "La carte est momentanément indisponible. Envoyez-nous votre itinéraire pour que nous puissions l’étudier.",
+    };
     document.querySelectorAll(".coverage-fallback").forEach((fallback) => {
-      fallback.textContent = "El mapa no está disponible en este momento. Puede enviarnos su ruta para revisarla.";
+      fallback.textContent = message[document.documentElement.lang] || message.es;
     });
   }
 }

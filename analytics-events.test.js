@@ -7,7 +7,7 @@ const vm = require("node:vm");
 const source = fs.readFileSync(path.join(__dirname, "analytics-events.js"), "utf8");
 const formUrl = "https://tally.so/r/kdMR1M";
 
-function setup({ widgetLoads = true } = {}) {
+function setup({ widgetLoads = true, href = formUrl } = {}) {
   const listeners = {};
   const events = [];
   const scripts = [];
@@ -16,7 +16,7 @@ function setup({ widgetLoads = true } = {}) {
 
   class HTMLAnchorElement {
     getAttribute(name) {
-      return name === "href" ? formUrl : null;
+      return name === "href" ? href : null;
     }
   }
 
@@ -55,7 +55,6 @@ function setup({ widgetLoads = true } = {}) {
   link.textContent = "Enviar detalles de una carga";
   link.closest = () => null;
   link.matches = () => false;
-  link.getAttribute = (name) => name === "href" ? formUrl : null;
   const click = (options = {}) => {
     const event = {
       button: 0,
@@ -100,4 +99,14 @@ test("falls back to the original form URL if the widget fails", async () => {
   await Promise.resolve();
   await Promise.resolve();
   assert.deepEqual(state.redirects, [formUrl]);
+});
+
+test("tracks quote page links in all three languages without intercepting navigation", () => {
+  for (const href of ["request-quote.html", "request-quote-en.html", "request-quote-fr.html#solicitud"]) {
+    const state = setup({ href });
+    assert.equal(state.click().defaultPrevented, undefined);
+    const event = state.events.find(([, name]) => name === "quote_page_click");
+    assert.equal(event?.[2].link_url, href);
+    assert.equal(state.scripts.length, 0);
+  }
 });

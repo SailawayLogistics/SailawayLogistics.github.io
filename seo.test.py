@@ -71,7 +71,7 @@ class SEOTests(unittest.TestCase):
                     if not value: continue
                     u = urlparse(value)
                     if not u.scheme and not u.netloc and u.path:
-                        self.assertTrue((ROOT/unquote(u.path)).exists(),value)
+                        self.assertTrue((ROOT/unquote(u.path).lstrip('/')).exists(),value)
                     if tag == 'img':
                         self.assertTrue(a.get('alt'))
                         self.assertGreater(int(a['width']),0)
@@ -90,6 +90,48 @@ class SEOTests(unittest.TestCase):
                 self.assertIn(urlparse(url).path.lstrip('/') or 'index.html',self.pages)
             for key in ['index.html','en.html','fr.html','freight-forwarding-espana.html','freight-forwarding-europa.html','eu-freight-forwarding.html']:
                 self.assertIn(DOMAIN+('' if key=='index.html' else key),urls)
+
+    def test_every_page_has_equivalent_language_versions(self):
+        def page_name(href):
+            return unquote(urlparse(href).path).lstrip('/') or 'index.html'
+
+        for name, page in self.pages.items():
+            with self.subTest(page=name):
+                language = page.select('html')[0]['lang']
+                alternates = page.select('link', 'rel', 'alternate')
+                versions = {a['hreflang']: a['href'] for a in alternates if 'hreflang' in a}
+                self.assertEqual(set(versions), {'es', 'en', 'fr', 'x-default'})
+                self.assertEqual(versions['x-default'], versions['es'])
+                self.assertEqual(page_name(versions[language]), name)
+                switches = page.select('a', 'hreflang', language)
+                self.assertTrue(any(a.get('aria-current') == 'page' and page_name(a['href']) == name
+                                    for a in switches))
+                for locale in ('es', 'en', 'fr'):
+                    other = self.pages[page_name(versions[locale])]
+                    self.assertEqual(other.select('html')[0]['lang'], locale)
+                    self.assertEqual(other.select('link', 'rel', 'alternate'), alternates)
+                    self.assertTrue(any(page_name(a['href']) == page_name(versions[locale])
+                                        for a in page.select('a', 'hreflang', locale)))
+                    for tag in ('h1', 'h2', 'h3', 'article', 'details'):
+                        self.assertEqual(len(page.select(tag)), len(other.select(tag)), tag)
+
+    def test_content_links_and_quote_forms_stay_in_current_language(self):
+        forms = {'es': 'kdMR1M', 'en': 'LZQVdy', 'fr': 'RG724K'}
+        for name, page in self.pages.items():
+            language = page.select('html')[0]['lang']
+            for a in page.select('a'):
+                href = a.get('href', '')
+                url = urlparse(href)
+                with self.subTest(page=name, href=href):
+                    if url.netloc == 'tally.so':
+                        self.assertEqual(url.path, '/r/' + forms[language])
+                    if a.get('hreflang') or not url.path or url.scheme not in ('', 'http', 'https'):
+                        continue
+                    if url.netloc and url.netloc != urlparse(DOMAIN).netloc:
+                        continue
+                    other = self.pages.get(unquote(url.path).lstrip('/') or 'index.html')
+                    if other:
+                        self.assertEqual(other.select('html')[0]['lang'], language)
 
     def test_all_service_pages_are_reachable_from_homepage(self):
         reached, pending = set(), ['index.html']
